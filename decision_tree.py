@@ -6,9 +6,7 @@
 
 import math
 import numpy as np
-from sklearn import datasets
-from sklearn import model_selection
-
+from sklearn import datasets, model_selection
 
 iris = datasets.load_iris()
 
