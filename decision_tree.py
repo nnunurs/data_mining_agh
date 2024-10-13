@@ -15,8 +15,16 @@ def entropy(y):
     p = counts / len(y)
     return sum([-p * math.log(p) for p in y if p > 0])
 
-def information_gain(X_column, y, threshold):
-    parent_entropy = entropy(y)
+def gini(y):
+    unique, counts = np.unique(y, return_counts=True)
+    p = counts / len(y)
+    return 1 - np.sum(p ** 2)
+
+def information_gain(X_column, y, threshold, crit='gini'):
+    if crit=='gini':
+        parent_entropy=gini(y)    
+    else:
+        parent_entropy = entropy(y)
     
     # podział zbioru na dwie części
     left = X_column <= threshold
@@ -32,8 +40,12 @@ def information_gain(X_column, y, threshold):
     n_right = len(y[right])
     
     # entropia w lewym i prawym poddrzewie
-    left_e = entropy(y[left])
-    right_e = entropy(y[right])
+    if crit=='gini':
+        left_e = gini(y[left])
+        right_e = gini(y[right])
+    else:
+        left_e = entropy(y[left])
+        right_e = entropy(y[right])
     
     # ważona średnia entropii w lewym i prawym poddrzewie
     avg_entropy = (n_left / n) * left_e + (n_right / n) * right_e
@@ -51,7 +63,7 @@ def best_split(X, y):
         
         # dla każdego progu
         for t in thresholds:
-            gain = information_gain(X_column, y, t)
+            gain = information_gain(X_column, y, t,crit='gini')
             if gain > best_gain:
                 best_gain = gain
                 best_feature = f_index
