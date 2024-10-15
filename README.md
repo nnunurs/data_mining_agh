@@ -1,4 +1,4 @@
-# Decision Tree Classifier
+# Classifiers and other algorithms in Python built from scratch
 
 This repository contains a custom implementation of a Decision Tree Classifier in Python. The classifier is built from scratch without using any high-level machine learning libraries like `scikit-learn` for the core decision tree logic. The implementation includes methods for training the model, making predictions, visualizing the tree structure, and evaluating the model on different datasets.
 
@@ -7,8 +7,9 @@ This repository contains a custom implementation of a Decision Tree Classifier i
 - [Installation](#installation)
 - [Usage](#usage)
 - [Code Structure](#code-structure)
-- [Example](#example)
-- [License](#license)
+  - [DecisionTreeClassifier Class](#decisiontreeclassifier-class)
+    - [Methods](#methods)
+    - [Example](#example)
 
 ## Installation
 
@@ -28,12 +29,11 @@ pip install numpy scikit-learn
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/yourusername/decision-tree-classifier.git
-cd decision-tree-classifier
+git clone https://github.com/nnunurs/modelowanie.git
+cd modelowanie
 ```
 
-2. **Run the example script**:
-
+2. **Check the example**:
 ```bash
 python example.py
 ```
@@ -54,3 +54,7 @@ The `DecisionTreeClassifier` class encapsulates all the functionality related to
 - `predict(self, X)`: Makes predictions for an array of samples.
 - `draw_tree(self, node=None, depth=0)`: Prints the structure of the tree.
 - `evaluate(self, X, y, test_size=0.2, random_state=42)`: Evaluates the model on a given dataset by splitting it into training and testing sets, training the model, making predictions, and calculating the accuracy.
+
+#### Example
+
+Run `example.py` to see the Decision Tree Classifier in action. The script loads the Iris dataset, trains the model, makes predictions, visualizes the tree structure, and evaluates the model's performance.
