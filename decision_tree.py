@@ -1,154 +1,145 @@
-# funkcja do obliczania entropii
-
-#rekurencyjne wybieranie atrybutów, które nie były wcześniej wybierane
-
-#information gain = entropy before - sum(entropy (j,after))
-
 import math
 import numpy as np
 from sklearn import datasets, model_selection
 
+class DecisionTreeClassifier:
+    def __init__(self, max_depth=10, criterion='gini'):
+        self.max_depth = max_depth
+        self.criterion = criterion
+        self.tree = None
+
+    class Node:
+        def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
+            self.feature = feature
+            self.threshold = threshold
+            self.left = left
+            self.right = right
+            self.value = value
+
+    def entropy(self, y):
+        unique, counts = np.unique(y, return_counts=True)
+        p = counts / len(y)
+        return -np.sum(p * np.log2(p))
+
+    def gini(self, y):
+        unique, counts = np.unique(y, return_counts=True)
+        p = counts / len(y)
+        return 1 - np.sum(p ** 2)
+
+    def information_gain(self, X_column, y, threshold):
+        if self.criterion == 'gini':
+            parent_entropy = self.gini(y)
+        else:
+            parent_entropy = self.entropy(y)
+
+        left = X_column <= threshold
+        right = X_column > threshold
+
+        if len(y[left]) == 0 or len(y[right]) == 0:
+            return 0
+
+        n = len(y)
+        n_left = len(y[left])
+        n_right = len(y[right])
+
+        if self.criterion == 'gini':
+            left_e = self.gini(y[left])
+            right_e = self.gini(y[right])
+        else:
+            left_e = self.entropy(y[left])
+            right_e = self.entropy(y[right])
+
+        avg_entropy = (n_left / n) * left_e + (n_right / n) * right_e
+        return parent_entropy - avg_entropy
+
+    def best_split(self, X, y):
+        best_gain = -1
+        best_feature = None
+        best_threshold = None
+
+        for f_index in range(X.shape[1]):
+            X_column = X[:, f_index]
+            thresholds = np.unique(X_column)
+
+            for t in thresholds:
+                gain = self.information_gain(X_column, y, t)
+                if gain > best_gain:
+                    best_gain = gain
+                    best_feature = f_index
+                    best_threshold = t
+
+        return best_feature, best_threshold
+
+    def build_tree(self, X, y, depth=0):
+        if len(y) == 0:
+            return self.Node(value=None)
+
+        if len(np.unique(y)) == 1 or depth >= self.max_depth:
+            most_common_label = np.bincount(y).argmax()
+            return self.Node(value=most_common_label)
+
+        feature, threshold = self.best_split(X, y)
+
+        if feature is None:
+            most_common_label = np.bincount(y).argmax()
+            return self.Node(value=most_common_label)
+
+        left_i = X[:, feature] <= threshold
+        right_i = X[:, feature] > threshold
+
+        left = self.build_tree(X[left_i], y[left_i], depth + 1)
+        right = self.build_tree(X[right_i], y[right_i], depth + 1)
+
+        return self.Node(feature, threshold, left, right)
+
+    def fit(self, X, y):
+        self.tree = self.build_tree(X, y)
+
+    def predict_tree(self, node, x):
+        if node.value is not None:
+            return node.value
+
+        if x[node.feature] <= node.threshold:
+            return self.predict_tree(node.left, x)
+        else:
+            return self.predict_tree(node.right, x)
+
+    def predict(self, X):
+        return np.array([self.predict_tree(self.tree, x) for x in X])
+
+    def draw_tree(self, node=None, depth=0):
+        if node is None:
+            node = self.tree
+
+        indent = "  " * depth
+        if node.value is not None:
+            print(f"{indent}└── return {node.value}")
+            return
+
+        print(f"{indent}├── if x[{node.feature}] <= {node.threshold}:")
+        self.draw_tree(node.left, depth + 1)
+
+        print(f"{indent}└── else:")
+        self.draw_tree(node.right, depth + 1)
+
+
+# Load the Iris dataset
 iris = datasets.load_iris()
-
-def entropy(y):
-    unique, counts = np.unique(y, return_counts=True)
-    p = counts / len(y)
-    return sum([-p * math.log(p) for p in y if p > 0])
-
-def gini(y):
-    unique, counts = np.unique(y, return_counts=True)
-    p = counts / len(y)
-    return 1 - np.sum(p ** 2)
-
-def information_gain(X_column, y, threshold, crit='gini'):
-    if crit=='gini':
-        parent_entropy=gini(y)    
-    else:
-        parent_entropy = entropy(y)
-    
-    # podział zbioru na dwie części
-    left = X_column <= threshold
-    right = X_column > threshold        
-    
-    # jeśli którykolwiek z podziałów jest pusty, to zwracamy 0
-    if len(y[left]) == 0 or len(y[right]) == 0:
-        return 0
-    
-    # liczba elementów w lewym i prawym poddrzewie
-    n = len(y)
-    n_left = len(y[left])
-    n_right = len(y[right])
-    
-    # entropia w lewym i prawym poddrzewie
-    if crit=='gini':
-        left_e = gini(y[left])
-        right_e = gini(y[right])
-    else:
-        left_e = entropy(y[left])
-        right_e = entropy(y[right])
-    
-    # ważona średnia entropii w lewym i prawym poddrzewie
-    avg_entropy = (n_left / n) * left_e + (n_right / n) * right_e
-    return parent_entropy - avg_entropy
-
-def best_split(X, y):
-    best_gain = -1
-    best_feature = None
-    best_threshold = None
-    
-    # dla każdej cechy
-    for f_index in range(X.shape[1]):
-        X_column = X[:, f_index]
-        thresholds = np.unique(X_column)
-        
-        # dla każdego progu
-        for t in thresholds:
-            gain = information_gain(X_column, y, t,crit='gini')
-            if gain > best_gain:
-                best_gain = gain
-                best_feature = f_index
-                best_threshold = t
-                
-    return best_feature, best_threshold
-
-
-class Node:
-    def __init__(self, feature=None, threshold=None, left=None, right=None, value=None):
-        self.feature = feature
-        self.threshold = threshold
-        self.left = left
-        self.right = right
-        self.value = value
-
-def build_tree(X, y, depth=0, max_depth=10):
-    if len(y) == 0:
-        return Node(value=None)
-    
-    if len(np.unique(y)) == 1 or depth >= max_depth:
-        most_common_label = np.bincount(y).argmax()
-        return Node(value=most_common_label)
-    
-    feature, threshold = best_split(X, y)
-    
-    if feature is None:
-        most_common_label = np.bincount(y).argmax()
-        return Node(value=most_common_label)
-    
-    left_i = X[:, feature] <= threshold
-    right_i = X[:, feature] > threshold
-    
-    left = build_tree(X[left_i], y[left_i], depth + 1, max_depth)
-    right = build_tree(X[right_i], y[right_i], depth + 1, max_depth)
-    
-    return Node(feature, threshold, left, right)
-    
-def predict_tree(node, x):
-    if node.value is not None:
-        return node.value
-    
-    if x[node.feature] <= node.threshold:
-        return predict_tree(node.left, x)
-    else:
-        return predict_tree(node.right, x)
-    
-def predict(tree, X):
-    return [predict_tree(tree, x) for x in X]
-    
-def draw_tree(node, depth=0):
-    indent = "  " * depth
-    if node.value is not None:
-        print(f"{indent}└── return {node.value}")
-        return
-
-    print(f"{indent}├── if x[{node.feature}] <= {node.threshold}:")
-    draw_tree(node.left, depth + 1)
-
-    print(f"{indent}└── else:")
-    draw_tree(node.right, depth + 1)
-
-
 X = np.array(iris.data)
-Y = np.array(iris.target)
+y = np.array(iris.target)
 
-X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_size=0.2)
-print("Train shape:", X_train.shape)
-print("Test shape:", X_test.shape)
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
 
-tree = build_tree(X_train, Y_train, max_depth=20)
+# Initialize and train the decision tree classifier
+clf = DecisionTreeClassifier(max_depth=10, criterion='gini')
+clf.fit(X_train, y_train)
+
+# Print the tree structure
 print("Tree:")
-draw_tree(tree)
+clf.draw_tree()
 
-Y_pred = predict(tree, X_test)
-print("Accuracy:", sum(Y_pred == Y_test) / len(Y_test))
-
-
-
-# X = np.array([[1, 1], [1, 2], [2, 1], [2, 2], [3, 1], [3, 2]])
-# y = np.array([0, 0, 0, 1, 1, 1])
-
-# # Budowanie drzewa
-# tree = build_tree(X, y, max_depth=3)
-
-# # Przewidywanie
-# predictions = predict(tree, X)
-# print("Predykcje:", predictions)
+# Make predictions and evaluate the model
+y_pred = clf.predict(X_test)
+accuracy = np.sum(y_pred == y_test) / len(y_test)
+print("Accuracy:", accuracy)
