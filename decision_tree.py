@@ -113,6 +113,18 @@ def predict_tree(node, x):
     
 def predict(tree, X):
     return [predict_tree(tree, x) for x in X]
+    
+def draw_tree(node, depth=0):
+    indent = "  " * depth
+    if node.value is not None:
+        print(f"{indent}└── return {node.value}")
+        return
+
+    print(f"{indent}├── if x[{node.feature}] <= {node.threshold}:")
+    draw_tree(node.left, depth + 1)
+
+    print(f"{indent}└── else:")
+    draw_tree(node.right, depth + 1)
 
 
 X = np.array(iris.data)
@@ -122,10 +134,14 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X, Y, test_s
 print("Train shape:", X_train.shape)
 print("Test shape:", X_test.shape)
 
-tree = build_tree(X_train, Y_train, max_depth=3)
-Y_pred = predict(tree, X_test)
+tree = build_tree(X_train, Y_train, max_depth=20)
+print("Tree:")
+draw_tree(tree)
 
+Y_pred = predict(tree, X_test)
 print("Accuracy:", sum(Y_pred == Y_test) / len(Y_test))
+
+
 
 # X = np.array([[1, 1], [1, 2], [2, 1], [2, 2], [3, 1], [3, 2]])
 # y = np.array([0, 0, 0, 1, 1, 1])
