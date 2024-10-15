@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from sklearn import datasets, model_selection
+from sklearn import model_selection
 
 class DecisionTreeClassifier:
     def __init__(self, max_depth=10, criterion='gini'):
@@ -121,25 +121,11 @@ class DecisionTreeClassifier:
 
         print(f"{indent}└── else:")
         self.draw_tree(node.right, depth + 1)
-
-
-# Load the Iris dataset
-iris = datasets.load_iris()
-X = np.array(iris.data)
-y = np.array(iris.target)
-
-# Split the data into training and testing sets
-X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Initialize and train the decision tree classifier
-clf = DecisionTreeClassifier(max_depth=10, criterion='gini')
-clf.fit(X_train, y_train)
-
-# Print the tree structure
-print("Tree:")
-clf.draw_tree()
-
-# Make predictions and evaluate the model
-y_pred = clf.predict(X_test)
-accuracy = np.sum(y_pred == y_test) / len(y_test)
-print("Accuracy:", accuracy)
+        
+    def evaluate(self, X_train, y_train, X_test, y_test):
+        self.fit(X_train, y_train)
+        y_pred = self.predict(X_test)
+        accuracy = np.sum(y_pred == y_test) / len(y_test)
+        print(f"Accuracy: {accuracy:.2f}")
+        return accuracy
+        
