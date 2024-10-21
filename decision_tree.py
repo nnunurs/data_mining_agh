@@ -1,6 +1,15 @@
 import math
 import numpy as np
 from sklearn import model_selection
+from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.datasets import load_iris, load_wine, load_diabetes
+
+iris = load_iris()
+wine = load_wine()
+diabetes = load_diabetes()
+
+X, y = wine.data, wine.target
+X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=0.2, random_state=42)
 
 class DecisionTreeClassifier:
     def __init__(self, max_depth=10, criterion='gini'):
@@ -127,5 +136,10 @@ class DecisionTreeClassifier:
         y_pred = self.predict(X_test)
         accuracy = np.sum(y_pred == y_test) / len(y_test)
         print(f"Accuracy: {accuracy:.2f}")
+        print(classification_report(y_test, y_pred))
         return accuracy
         
+tree = DecisionTreeClassifier()
+tree.evaluate(X_train, y_train, X_test, y_test)
+
+tree.draw_tree()
