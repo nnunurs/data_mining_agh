@@ -1,12 +1,11 @@
 from decision_tree import DecisionTreeClassifier
-from sklearn.datasets import load_iris, load_wine, load_diabetes
+from sklearn.datasets import load_iris, load_wine
 from sklearn import model_selection
 import numpy as np
 
 # Load the datasets
 iris = load_iris()
 wine = load_wine()
-diabetes = load_diabetes()
 
 # Iris
 print("Iris:\n")
@@ -29,3 +28,6 @@ clf.fit(X_train, y_train)
 print("Tree:")
 clf.draw_tree()
 clf.evaluate(X_train, y_train, X_test, y_test)
+
+#TODO mist
+# https://paperswithcode.com/dataset/mist

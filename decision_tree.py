@@ -98,7 +98,6 @@ class DecisionTreeClassifier:
     def predict_tree(self, node, x):
         if node.value is not None:
             return node.value
-
         if x[node.feature] <= node.threshold:
             return self.predict_tree(node.left, x)
         else:
