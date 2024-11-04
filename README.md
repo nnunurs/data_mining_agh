@@ -13,29 +13,16 @@ This repository contains a custom implementation of a Decision Tree Classifier i
 
 ## Installation
 
-To run the code, you need to have Python installed along with the following libraries:
-
-- `numpy`
-- `scikit-learn`
-
-You can install the required libraries using pip:
-
-```bash
-pip install numpy scikit-learn
-```
-
-## Usage
-
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/nnunurs/modelowanie.git
-cd modelowanie
+git clone https://github.com/nnunurs/data_mine_modeling.git
+cd data_mine_modeling
 ```
 
-2. **Check the example**:
+2. **Install required libraries**:
 ```bash
-python example.py
+pip install -r requirements.txt
 ```
 
 ## Code Structure
@@ -58,3 +45,30 @@ The `DecisionTreeClassifier` class encapsulates all the functionality related to
 #### Example
 
 Run `example.py` to see the Decision Tree Classifier in action. The script loads the Iris dataset, trains the model, makes predictions, visualizes the tree structure, and evaluates the model's performance.
+
+```python
+from decision_tree import DecisionTreeClassifier
+from sklearn.datasets import load_iris
+
+# Load the Iris dataset
+data = load_iris()
+X, y = data.data, data.target
+
+# Initialize the Decision Tree Classifier
+clf = DecisionTreeClassifier(max_depth=3, criterion='gini')
+
+# Fit the model to the data
+clf.fit(X, y)
+
+# Make predictions
+predictions = clf.predict(X)
+
+# Visualize the tree structure
+clf.draw_tree()
+
+# Evaluate the model
+accuracy = clf.evaluate(X, y)
+print(f'Model Accuracy: {accuracy:.2f}')
+```
+
+This is a simple example to demonstrate how to use the `DecisionTreeClassifier` class. You can experiment with different datasets and hyperparameters to see how the model performs.
