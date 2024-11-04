@@ -16,8 +16,8 @@ This repository contains a custom implementation of a Decision Tree Classifier i
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/nnunurs/data_mine_modeling.git
-cd data_mine_modeling
+git clone https://github.com/nnunurs/data_mining_modeling.git
+cd data_mining_modeling
 ```
 
 2. **Install required libraries**:
