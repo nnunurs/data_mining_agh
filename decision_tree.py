@@ -71,14 +71,12 @@ class DecisionTreeClassifier:
                     best_feature = f_index
                     best_threshold = t
 
-        # Print information about the best feature and threshold found
         if self.verbose:
             print(f"Best split: Feature {best_feature} at threshold {best_threshold} with gain {best_gain}")
         
         return best_feature, best_threshold
 
     def build_tree(self, X, y, depth=0):
-        # Print information about the current depth and number of samples
         if self.verbose:
             print(f"Building tree at depth {depth} with {len(y)} samples")
 
