@@ -1,11 +1,14 @@
 import numpy as np
+from collections import Counter
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
-import matplotlib.pyplot
+import matplotlib.pyplot as plt
 
 class DecisionTreeClassifier:
-    def __init__(self, max_depth=10, criterion='gini'):
+    def __init__(self, max_depth=10, criterion='gini', min_samples_split=2, verbose=False):
         self.max_depth = max_depth
         self.criterion = criterion
+        self.min_samples_split = min_samples_split
+        self.verbose = verbose
         self.tree = None
 
     class Node:
@@ -68,24 +71,43 @@ class DecisionTreeClassifier:
                     best_feature = f_index
                     best_threshold = t
 
+        # Print information about the best feature and threshold found
+        if self.verbose:
+            print(f"Best split: Feature {best_feature} at threshold {best_threshold} with gain {best_gain}")
+        
         return best_feature, best_threshold
 
     def build_tree(self, X, y, depth=0):
-        if len(y) == 0:
-            return self.Node(value=None)
+        # Print information about the current depth and number of samples
+        if self.verbose:
+            print(f"Building tree at depth {depth} with {len(y)} samples")
+
+        if len(y) < self.min_samples_split:
+            most_common_label = Counter(y).most_common(1)[0][0]
+            if self.verbose:
+                print(f"Not enough samples to split. Creating leaf node with class {most_common_label}")
+            return self.Node(value=most_common_label)
 
         if len(np.unique(y)) == 1 or depth >= self.max_depth:
-            most_common_label = np.bincount(y).argmax()
+            most_common_label = Counter(y).most_common(1)[0][0]
+            if self.verbose:
+                print(f"Leaf node at depth {depth} with class {most_common_label}")
             return self.Node(value=most_common_label)
 
         feature, threshold = self.best_split(X, y)
 
         if feature is None:
-            most_common_label = np.bincount(y).argmax()
+            most_common_label = Counter(y).most_common(1)[0][0]
+            if self.verbose:
+                print(f"No valid split found. Creating leaf node with class {most_common_label}")
             return self.Node(value=most_common_label)
 
         left_i = X[:, feature] <= threshold
         right_i = X[:, feature] > threshold
+
+        # Print about branching
+        if self.verbose:
+            print(f"Splitting at feature {feature}, threshold {threshold} -> Left: {np.sum(left_i)} samples, Right: {np.sum(right_i)} samples")
 
         left = self.build_tree(X[left_i], y[left_i], depth + 1)
         right = self.build_tree(X[right_i], y[right_i], depth + 1)
@@ -93,7 +115,11 @@ class DecisionTreeClassifier:
         return self.Node(feature, threshold, left, right)
 
     def fit(self, X, y):
+        if self.verbose:
+            print("Starting to build the tree...")
         self.tree = self.build_tree(X, y)
+        if self.verbose:
+            print("Finished building the tree.")
 
     def predict_tree(self, node, x):
         if node.value is not None:
@@ -106,22 +132,9 @@ class DecisionTreeClassifier:
     def predict(self, X):
         return np.array([self.predict_tree(self.tree, x) for x in X])
 
-    def draw_tree(self, node=None, depth=0):
-        if node is None:
-            node = self.tree
-
-        indent = "  " * depth
-        if node.value is not None:
-            print(f"{indent}└── return {node.value}")
-            return
-
-        print(f"{indent}├── if x[{node.feature}] <= {node.threshold}:")
-        self.draw_tree(node.left, depth + 1)
-
-        print(f"{indent}└── else:")
-        self.draw_tree(node.right, depth + 1)
-        
     def evaluate(self, X_train, y_train, X_test, y_test):
+        if self.verbose:
+            print("Evaluating model...")
         self.fit(X_train, y_train)
         y_pred = self.predict(X_test)
         accuracy = np.sum(y_pred == y_test) / len(y_test)
@@ -132,7 +145,6 @@ class DecisionTreeClassifier:
         disp = ConfusionMatrixDisplay(confusion_matrix=cm)
         
         disp.plot()
-        matplotlib.pyplot.show(block=True)
+        plt.show(block=True)
 
         return accuracy
-        
