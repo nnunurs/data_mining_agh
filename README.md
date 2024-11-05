@@ -76,10 +76,13 @@ This is a simple example to demonstrate how to use the `DecisionTreeClassifier` 
 
 #### Performance
 **Iris**
+
 ![result iris](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_iris.png?raw=true)
 
 **Wine**
+
 ![result wine](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_wine.png?raw=true)
 
 **MNIST** (1% subset) 
+
 ![result mnist](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_mnist_1%25.png?raw=true)
