@@ -40,6 +40,8 @@ def run_experiment(X_train, X_test, y_train, y_test, dataset_name, max_depth=10)
         print(f"{dataset_name} | Depth: {depth} | Our Model Accuracy: {accuracy_ours:.2f} | Builtin Accuracy: {accuracy_builtin:.2f}")
         print(f"Execution Time - Our Model: {times_ours[depth]:.4f}s | Builtin Model: {times_builtin[depth]:.4f}s")
 
+    print(f"Total time || ours: {sum(times_ours.values()):.4f}s, builtin: {sum(times_builtin.values()):.4f}s")
+
     return results_ours, results_builtin, times_ours, times_builtin
 
 def plot_results(results_ours, results_builtin, dataset_name):
