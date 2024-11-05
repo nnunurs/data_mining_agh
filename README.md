@@ -75,14 +75,12 @@ print(f'Model Accuracy: {accuracy:.2f}')
 This is a simple example to demonstrate how to use the `DecisionTreeClassifier` class. You can experiment with different datasets and hyperparameters to see how the model performs.
 
 #### Performance
-**Iris**
 
 ![result iris](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_iris.png?raw=true)
-
-**Wine**
+Iris
 
 ![result wine](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_wine.png?raw=true)
-
-**MNIST** (1% subset) 
+Wine
 
 ![result mnist](https://github.com/nnunurs/data_mining_agh/blob/main/results/result_mnist_1%25.png?raw=true)
+MNIST (1% subset) 
