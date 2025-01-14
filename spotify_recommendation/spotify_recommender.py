@@ -42,6 +42,7 @@ class MusicRecommender:
             api_key=api_key,
             api_secret=api_secret
         )
+        
         print("Successfully connected to Last.fm API!")
     
     def load_streaming_history(self, data_dir='data'):
@@ -111,7 +112,7 @@ class MusicRecommender:
     
     def process_listening_history(self):
         if self.history_data is None:
-            raise ValueError("Load data first using load_streaming_history()")
+            raise ValueError("No data loaded. Call load_streaming_history() first")
         
         self.history_data['ts'] = pd.to_datetime(self.history_data['ts'])
         
