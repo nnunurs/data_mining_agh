@@ -153,7 +153,7 @@ if __name__ == "__main__":
         if not folder_path.exists():
             print(f"Error: Folder {folder_path.absolute()} does not exist!")
         else:
-            process_folder(folder_path, sample_size=0.1)
+            process_folder(folder_path, sample_size=0.01)
     except Exception as e:
         print(f"\nAn error occurred: {str(e)}")
         traceback.print_exc()

@@ -1,0 +1,6660 @@
+
+Image: 43023.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 85.44%
+Coat: 10.14%
+Sandal: 1.78%
+Shirt: 1.35%
+T-shirt/top: 1.15%
+Trouser: 0.05%
+Sneaker: 0.04%
+Bag: 0.03%
+Ankle boot: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 30313.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 70.00%
+Shirt: 22.88%
+Coat: 5.03%
+T-shirt/top: 2.02%
+Sneaker: 0.06%
+Trouser: 0.01%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 16164.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 97.58%
+Pullover: 1.11%
+Trouser: 0.61%
+Shirt: 0.52%
+Sandal: 0.13%
+Coat: 0.04%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 59437.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 38.42%
+Coat: 22.06%
+Shirt: 17.78%
+T-shirt/top: 17.74%
+Trouser: 3.77%
+Sandal: 0.11%
+Bag: 0.08%
+Sneaker: 0.02%
+Ankle boot: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 49904.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 35.83%
+T-shirt/top: 29.00%
+Pullover: 23.09%
+Shirt: 9.28%
+Trouser: 2.34%
+Sandal: 0.45%
+Bag: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 13960.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 42.21%
+Sandal: 36.46%
+Shirt: 13.01%
+Trouser: 8.19%
+Pullover: 0.12%
+Coat: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 3314.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Pullover: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Coat: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 2893.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 45.74%
+Shirt: 37.64%
+T-shirt/top: 10.98%
+Pullover: 2.90%
+Coat: 1.47%
+Sandal: 0.81%
+Bag: 0.32%
+Ankle boot: 0.09%
+Sneaker: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 37580.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 52.88%
+Coat: 17.64%
+Trouser: 12.80%
+T-shirt/top: 8.80%
+Shirt: 6.50%
+Bag: 0.50%
+Sneaker: 0.36%
+Dress: 0.21%
+Ankle boot: 0.18%
+Sandal: 0.13%
+--------------------------------------------------
+
+Image: 33137.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 38.14%
+Trouser: 36.23%
+Pullover: 13.81%
+Shirt: 6.30%
+Sandal: 4.13%
+Ankle boot: 0.78%
+Coat: 0.46%
+Bag: 0.08%
+Sneaker: 0.06%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 42674.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 74.24%
+Pullover: 24.27%
+Coat: 0.77%
+T-shirt/top: 0.67%
+Trouser: 0.04%
+Sandal: 0.02%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 28769.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 87.05%
+Shirt: 11.61%
+T-shirt/top: 0.88%
+Coat: 0.38%
+Trouser: 0.07%
+Sneaker: 0.01%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 55337.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 76.19%
+Coat: 11.39%
+T-shirt/top: 6.71%
+Shirt: 3.94%
+Trouser: 1.65%
+Bag: 0.07%
+Sneaker: 0.03%
+Sandal: 0.01%
+Dress: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 23277.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.89%
+Ankle boot: 0.09%
+Sneaker: 0.01%
+T-shirt/top: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 6542.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 32437.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.98%
+T-shirt/top: 0.02%
+Coat: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 24876.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 73.90%
+Sandal: 13.44%
+Pullover: 8.26%
+Shirt: 3.52%
+T-shirt/top: 0.62%
+Coat: 0.25%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 28530.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Trouser: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 4118.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 94.34%
+Ankle boot: 5.21%
+Sneaker: 0.44%
+Trouser: 0.01%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 3800.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 33.98%
+Pullover: 28.32%
+T-shirt/top: 21.02%
+Shirt: 13.77%
+Trouser: 2.36%
+Sandal: 0.47%
+Dress: 0.04%
+Bag: 0.03%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 9819.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 80.67%
+Shirt: 8.33%
+Pullover: 7.54%
+T-shirt/top: 2.70%
+Trouser: 0.52%
+Coat: 0.21%
+Sneaker: 0.02%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 18458.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 98.85%
+Coat: 0.84%
+T-shirt/top: 0.23%
+Pullover: 0.05%
+Sandal: 0.03%
+Shirt: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 6436.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 53.73%
+Shirt: 21.51%
+T-shirt/top: 14.29%
+Coat: 5.21%
+Trouser: 4.41%
+Sandal: 0.27%
+Sneaker: 0.25%
+Bag: 0.16%
+Ankle boot: 0.11%
+Dress: 0.07%
+--------------------------------------------------
+
+Image: 47229.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 48.09%
+Sandal: 28.73%
+Trouser: 15.55%
+Shirt: 3.40%
+Ankle boot: 2.63%
+Pullover: 1.53%
+Coat: 0.04%
+Sneaker: 0.02%
+Dress: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 45292.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 48.04%
+Shirt: 25.00%
+Coat: 12.17%
+T-shirt/top: 7.46%
+Trouser: 6.91%
+Bag: 0.15%
+Sneaker: 0.13%
+Sandal: 0.10%
+Dress: 0.02%
+Ankle boot: 0.02%
+--------------------------------------------------
+
+Image: 31841.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 27.96%
+Trouser: 27.30%
+Pullover: 23.54%
+T-shirt/top: 14.25%
+Coat: 3.33%
+Sneaker: 1.47%
+Bag: 0.84%
+Sandal: 0.82%
+Ankle boot: 0.33%
+Dress: 0.15%
+--------------------------------------------------
+
+Image: 42665.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 38.70%
+Pullover: 29.06%
+Sandal: 19.23%
+Shirt: 6.35%
+T-shirt/top: 4.89%
+Coat: 1.66%
+Bag: 0.10%
+Sneaker: 0.02%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 15586.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 74.95%
+T-shirt/top: 12.89%
+Shirt: 9.66%
+Pullover: 1.15%
+Sneaker: 0.83%
+Ankle boot: 0.36%
+Dress: 0.08%
+Coat: 0.03%
+Sandal: 0.02%
+Bag: 0.02%
+--------------------------------------------------
+
+Image: 6462.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.32%
+T-shirt/top: 1.43%
+Trouser: 0.88%
+Ankle boot: 0.31%
+Shirt: 0.04%
+Pullover: 0.01%
+Sneaker: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 48329.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 80.39%
+T-shirt/top: 16.49%
+Sandal: 1.89%
+Coat: 1.00%
+Pullover: 0.12%
+Shirt: 0.11%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 31886.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 72.36%
+Coat: 8.50%
+Pullover: 7.91%
+Shirt: 4.98%
+Sandal: 3.60%
+T-shirt/top: 2.60%
+Bag: 0.03%
+Sneaker: 0.01%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 43966.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 91.28%
+Coat: 3.23%
+Shirt: 2.83%
+Pullover: 1.80%
+T-shirt/top: 0.67%
+Sandal: 0.08%
+Bag: 0.06%
+Sneaker: 0.04%
+Dress: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 43715.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 39.07%
+Coat: 21.76%
+Shirt: 18.30%
+Trouser: 11.19%
+T-shirt/top: 9.05%
+Bag: 0.29%
+Sneaker: 0.15%
+Sandal: 0.08%
+Ankle boot: 0.07%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 29910.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.99%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 2635.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 47.11%
+T-shirt/top: 37.51%
+Pullover: 7.51%
+Bag: 2.38%
+Coat: 2.02%
+Sandal: 1.78%
+Trouser: 1.32%
+Dress: 0.28%
+Ankle boot: 0.05%
+Sneaker: 0.04%
+--------------------------------------------------
+
+Image: 17172.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 74.43%
+T-shirt/top: 23.25%
+Sandal: 2.12%
+Shirt: 0.15%
+Pullover: 0.04%
+Coat: 0.01%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 28093.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 35.40%
+T-shirt/top: 32.33%
+Sandal: 32.11%
+Shirt: 0.11%
+Pullover: 0.03%
+Coat: 0.01%
+Dress: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 28094.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 65.62%
+Trouser: 34.00%
+T-shirt/top: 0.33%
+Dress: 0.02%
+Coat: 0.01%
+Shirt: 0.01%
+Pullover: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 58395.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 97.67%
+T-shirt/top: 2.18%
+Sandal: 0.12%
+Shirt: 0.03%
+Pullover: 0.00%
+Coat: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43015.jpg
+Predicted class: Sneaker
+Probabilities:
+Sneaker: 54.09%
+Ankle boot: 45.88%
+Sandal: 0.02%
+Trouser: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Shirt: 0.00%
+T-shirt/top: 0.00%
+--------------------------------------------------
+
+Image: 3346.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 33992.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 76.12%
+Pullover: 19.98%
+T-shirt/top: 2.14%
+Sandal: 0.74%
+Coat: 0.64%
+Trouser: 0.36%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 49872.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 76.53%
+Coat: 13.65%
+Pullover: 6.75%
+T-shirt/top: 1.92%
+Shirt: 0.93%
+Sandal: 0.14%
+Bag: 0.07%
+Sneaker: 0.01%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 54175.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 98.63%
+Coat: 1.10%
+Pullover: 0.24%
+T-shirt/top: 0.02%
+Shirt: 0.01%
+Sandal: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 33168.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 53.40%
+Pullover: 42.49%
+T-shirt/top: 3.99%
+Coat: 0.12%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+Sandal: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 35420.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 55.10%
+Shirt: 16.18%
+Coat: 12.88%
+T-shirt/top: 8.20%
+Trouser: 7.21%
+Bag: 0.13%
+Sneaker: 0.10%
+Sandal: 0.09%
+Ankle boot: 0.07%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 6020.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 65.42%
+Sandal: 28.05%
+Shirt: 2.15%
+Pullover: 2.05%
+T-shirt/top: 1.67%
+Sneaker: 0.51%
+Coat: 0.12%
+Bag: 0.03%
+Ankle boot: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 44348.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 61.14%
+Pullover: 23.45%
+Shirt: 7.33%
+T-shirt/top: 4.97%
+Sneaker: 1.77%
+Coat: 1.02%
+Ankle boot: 0.16%
+Sandal: 0.08%
+Bag: 0.07%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 32229.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 62.86%
+Shirt: 32.29%
+T-shirt/top: 2.18%
+Coat: 1.63%
+Sandal: 1.00%
+Trouser: 0.04%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 57521.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 77.31%
+Shirt: 9.41%
+Sandal: 7.86%
+Trouser: 2.87%
+Pullover: 1.49%
+Ankle boot: 1.02%
+Coat: 0.02%
+Bag: 0.01%
+Sneaker: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 35982.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 54.15%
+Trouser: 17.32%
+Shirt: 12.28%
+Sandal: 10.51%
+T-shirt/top: 5.11%
+Coat: 0.56%
+Sneaker: 0.04%
+Bag: 0.02%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 13177.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 43.39%
+T-shirt/top: 33.71%
+Shirt: 15.02%
+Pullover: 6.06%
+Bag: 0.70%
+Coat: 0.65%
+Sandal: 0.31%
+Ankle boot: 0.13%
+Sneaker: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 50849.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 46906.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.52%
+T-shirt/top: 2.47%
+Shirt: 0.01%
+Coat: 0.01%
+Bag: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 31620.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 72.68%
+Trouser: 23.03%
+Shirt: 3.76%
+Pullover: 0.43%
+Coat: 0.06%
+Sneaker: 0.01%
+Ankle boot: 0.01%
+Sandal: 0.01%
+Bag: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 5402.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 49.50%
+Shirt: 19.87%
+Coat: 18.13%
+T-shirt/top: 8.24%
+Trouser: 1.71%
+Dress: 1.06%
+Bag: 0.69%
+Sneaker: 0.47%
+Ankle boot: 0.21%
+Sandal: 0.13%
+--------------------------------------------------
+
+Image: 9775.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 87.64%
+Sandal: 5.90%
+Pullover: 3.79%
+T-shirt/top: 1.44%
+Shirt: 1.04%
+Coat: 0.17%
+Sneaker: 0.02%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 36217.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 29.33%
+Pullover: 25.41%
+Coat: 22.90%
+T-shirt/top: 18.18%
+Shirt: 3.64%
+Bag: 0.20%
+Sandal: 0.15%
+Dress: 0.11%
+Sneaker: 0.06%
+Ankle boot: 0.03%
+--------------------------------------------------
+
+Image: 9835.jpg
+Predicted class: Sneaker
+Probabilities:
+Sneaker: 96.57%
+Ankle boot: 2.90%
+Sandal: 0.51%
+Trouser: 0.02%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 2661.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 29.02%
+Pullover: 25.41%
+T-shirt/top: 17.53%
+Shirt: 15.63%
+Trouser: 8.03%
+Bag: 1.63%
+Dress: 1.34%
+Sneaker: 0.54%
+Ankle boot: 0.49%
+Sandal: 0.36%
+--------------------------------------------------
+
+Image: 28699.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 91.18%
+Shirt: 7.57%
+T-shirt/top: 0.65%
+Coat: 0.52%
+Trouser: 0.06%
+Sneaker: 0.01%
+Sandal: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 9153.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.99%
+Trouser: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 41260.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.51%
+Trouser: 0.34%
+Shirt: 0.13%
+Bag: 0.01%
+Sandal: 0.01%
+Pullover: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 54511.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 72.62%
+Shirt: 17.09%
+Trouser: 8.22%
+Pullover: 1.60%
+Bag: 0.17%
+Dress: 0.09%
+Coat: 0.09%
+Sandal: 0.08%
+Ankle boot: 0.03%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 17227.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 30.75%
+Coat: 27.62%
+Shirt: 20.14%
+T-shirt/top: 12.07%
+Trouser: 8.78%
+Bag: 0.33%
+Sandal: 0.11%
+Sneaker: 0.11%
+Ankle boot: 0.05%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 12639.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 75.03%
+Shirt: 23.03%
+T-shirt/top: 1.19%
+Coat: 0.71%
+Sneaker: 0.02%
+Trouser: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 10746.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 39.14%
+Pullover: 26.84%
+Coat: 19.76%
+Shirt: 9.49%
+Trouser: 4.51%
+Bag: 0.12%
+Sandal: 0.11%
+Dress: 0.01%
+Sneaker: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 6729.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 82.64%
+Ankle boot: 17.33%
+T-shirt/top: 0.01%
+Trouser: 0.01%
+Sneaker: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 49536.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 76.68%
+Trouser: 18.22%
+Shirt: 4.77%
+Bag: 0.26%
+Pullover: 0.06%
+Dress: 0.01%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 51681.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 36.57%
+Coat: 27.38%
+T-shirt/top: 15.31%
+Pullover: 11.67%
+Shirt: 8.53%
+Bag: 0.28%
+Sandal: 0.20%
+Sneaker: 0.03%
+Dress: 0.02%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 53152.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 79.30%
+Pullover: 15.01%
+T-shirt/top: 2.51%
+Shirt: 2.01%
+Coat: 0.96%
+Sneaker: 0.13%
+Sandal: 0.05%
+Ankle boot: 0.02%
+Bag: 0.02%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 9345.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 98.99%
+T-shirt/top: 0.72%
+Pullover: 0.17%
+Coat: 0.12%
+Sandal: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 26625.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.07%
+Ankle boot: 2.43%
+T-shirt/top: 0.25%
+Trouser: 0.21%
+Shirt: 0.03%
+Pullover: 0.01%
+Sneaker: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 14801.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.82%
+Shirt: 0.13%
+Trouser: 0.04%
+Bag: 0.00%
+Pullover: 0.00%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 42535.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 70.91%
+Trouser: 22.06%
+Pullover: 6.47%
+Coat: 0.37%
+Shirt: 0.14%
+T-shirt/top: 0.05%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 59178.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 26.93%
+Shirt: 24.81%
+T-shirt/top: 21.64%
+Pullover: 17.54%
+Coat: 4.37%
+Sandal: 3.08%
+Ankle boot: 0.92%
+Sneaker: 0.43%
+Bag: 0.18%
+Dress: 0.11%
+--------------------------------------------------
+
+Image: 52404.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 41.70%
+Shirt: 40.09%
+T-shirt/top: 17.20%
+Coat: 0.87%
+Dress: 0.06%
+Sandal: 0.03%
+Trouser: 0.02%
+Bag: 0.01%
+Sneaker: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 31411.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.91%
+Trouser: 0.08%
+T-shirt/top: 0.01%
+Pullover: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 23941.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 76.27%
+Trouser: 11.06%
+Ankle boot: 4.59%
+T-shirt/top: 3.36%
+Shirt: 2.06%
+Pullover: 1.33%
+Sneaker: 1.01%
+Coat: 0.25%
+Dress: 0.06%
+Bag: 0.02%
+--------------------------------------------------
+
+Image: 52651.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 35.21%
+T-shirt/top: 28.50%
+Pullover: 22.22%
+Trouser: 11.38%
+Coat: 1.76%
+Bag: 0.56%
+Ankle boot: 0.10%
+Sandal: 0.09%
+Sneaker: 0.08%
+Dress: 0.08%
+--------------------------------------------------
+
+Image: 35667.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 94.25%
+Pullover: 2.60%
+Trouser: 1.31%
+Shirt: 0.88%
+Sandal: 0.82%
+Coat: 0.11%
+Bag: 0.02%
+Ankle boot: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 16392.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 82.40%
+Pullover: 5.74%
+T-shirt/top: 4.41%
+Sandal: 2.79%
+Coat: 2.12%
+Shirt: 1.46%
+Sneaker: 0.62%
+Ankle boot: 0.43%
+Bag: 0.02%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 46991.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 89.44%
+Trouser: 4.40%
+Shirt: 4.07%
+T-shirt/top: 1.61%
+Coat: 0.32%
+Sandal: 0.14%
+Sneaker: 0.01%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 37687.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 84.61%
+Ankle boot: 15.38%
+Sneaker: 0.01%
+T-shirt/top: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 33464.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 35.78%
+Shirt: 34.29%
+Pullover: 25.54%
+Coat: 3.75%
+Trouser: 0.39%
+Bag: 0.12%
+Dress: 0.07%
+Ankle boot: 0.03%
+Sneaker: 0.02%
+Sandal: 0.01%
+--------------------------------------------------
+
+Image: 8664.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 82.53%
+T-shirt/top: 10.84%
+Coat: 3.24%
+Shirt: 2.24%
+Pullover: 0.77%
+Sandal: 0.21%
+Bag: 0.15%
+Sneaker: 0.01%
+Ankle boot: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 27889.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 96.23%
+Shirt: 3.08%
+T-shirt/top: 0.51%
+Coat: 0.13%
+Trouser: 0.03%
+Sandal: 0.01%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 18402.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.76%
+Ankle boot: 1.10%
+T-shirt/top: 0.11%
+Sneaker: 0.03%
+Trouser: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 10037.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 22.56%
+Shirt: 21.50%
+Sandal: 18.22%
+Pullover: 12.36%
+T-shirt/top: 9.82%
+Ankle boot: 5.74%
+Coat: 5.51%
+Sneaker: 3.57%
+Dress: 0.48%
+Bag: 0.23%
+--------------------------------------------------
+
+Image: 14611.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Ankle boot: 0.00%
+Shirt: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 4234.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 59.19%
+Pullover: 27.55%
+T-shirt/top: 12.78%
+Coat: 0.36%
+Dress: 0.04%
+Sneaker: 0.04%
+Sandal: 0.02%
+Trouser: 0.02%
+Bag: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 18431.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.75%
+Shirt: 0.25%
+Trouser: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 48562.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 57.79%
+Shirt: 26.83%
+Coat: 7.09%
+T-shirt/top: 6.59%
+Trouser: 1.33%
+Sneaker: 0.13%
+Bag: 0.11%
+Ankle boot: 0.06%
+Dress: 0.04%
+Sandal: 0.01%
+--------------------------------------------------
+
+Image: 33431.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 94.69%
+Trouser: 2.84%
+Shirt: 1.93%
+Pullover: 0.26%
+Coat: 0.14%
+Sandal: 0.07%
+Bag: 0.05%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 16567.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 68.13%
+Shirt: 17.12%
+T-shirt/top: 11.07%
+Sandal: 1.45%
+Coat: 0.89%
+Sneaker: 0.76%
+Trouser: 0.26%
+Ankle boot: 0.15%
+Bag: 0.14%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 2483.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 71.61%
+Pullover: 14.56%
+T-shirt/top: 12.42%
+Sandal: 1.31%
+Coat: 0.08%
+Trouser: 0.01%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 25541.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 90.45%
+Shirt: 8.64%
+T-shirt/top: 0.68%
+Coat: 0.20%
+Trouser: 0.01%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 9119.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.76%
+Trouser: 0.13%
+T-shirt/top: 0.09%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 2836.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 37.37%
+Shirt: 22.83%
+Pullover: 19.83%
+Trouser: 12.74%
+Coat: 4.26%
+Sandal: 2.70%
+Bag: 0.13%
+Sneaker: 0.07%
+Ankle boot: 0.05%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 56944.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 41.97%
+T-shirt/top: 16.91%
+Shirt: 16.09%
+Coat: 15.50%
+Trouser: 8.99%
+Sandal: 0.18%
+Bag: 0.17%
+Sneaker: 0.09%
+Ankle boot: 0.07%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 52895.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 37.42%
+Sandal: 36.34%
+Trouser: 11.51%
+Pullover: 8.56%
+Coat: 4.25%
+Shirt: 1.91%
+Bag: 0.01%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 9764.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 60.76%
+Pullover: 36.91%
+T-shirt/top: 1.15%
+Coat: 0.86%
+Trouser: 0.26%
+Sandal: 0.05%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 13320.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 48.10%
+T-shirt/top: 18.46%
+Coat: 17.84%
+Shirt: 14.93%
+Trouser: 0.55%
+Sandal: 0.05%
+Bag: 0.03%
+Dress: 0.02%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 58941.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 43.11%
+Shirt: 30.62%
+Coat: 11.05%
+T-shirt/top: 9.44%
+Trouser: 4.91%
+Sneaker: 0.27%
+Bag: 0.24%
+Sandal: 0.20%
+Ankle boot: 0.11%
+Dress: 0.05%
+--------------------------------------------------
+
+Image: 15341.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 65.98%
+T-shirt/top: 27.28%
+Pullover: 2.90%
+Shirt: 2.56%
+Coat: 0.65%
+Sandal: 0.31%
+Bag: 0.15%
+Ankle boot: 0.09%
+Dress: 0.05%
+Sneaker: 0.03%
+--------------------------------------------------
+
+Image: 2923.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 41.87%
+Pullover: 26.87%
+T-shirt/top: 20.85%
+Coat: 5.41%
+Trouser: 4.09%
+Sandal: 0.68%
+Sneaker: 0.15%
+Bag: 0.04%
+Ankle boot: 0.03%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 25296.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 39.81%
+Trouser: 33.47%
+Shirt: 21.59%
+Pullover: 3.80%
+Coat: 0.58%
+Bag: 0.48%
+Sandal: 0.20%
+Ankle boot: 0.04%
+Sneaker: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 44732.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 68.20%
+Shirt: 17.17%
+Pullover: 9.32%
+Trouser: 3.71%
+Coat: 1.00%
+Bag: 0.19%
+Sandal: 0.19%
+Ankle boot: 0.16%
+Sneaker: 0.03%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 39853.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 57.96%
+Coat: 20.48%
+T-shirt/top: 12.97%
+Shirt: 7.14%
+Trouser: 1.26%
+Sandal: 0.11%
+Bag: 0.05%
+Sneaker: 0.01%
+Dress: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 36590.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 77.47%
+Trouser: 20.71%
+Shirt: 1.18%
+Pullover: 0.58%
+Sandal: 0.04%
+Coat: 0.01%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 14534.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 81.88%
+T-shirt/top: 9.44%
+Trouser: 7.62%
+Shirt: 0.80%
+Pullover: 0.19%
+Coat: 0.07%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 55949.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 62.25%
+T-shirt/top: 23.26%
+Coat: 7.77%
+Trouser: 6.42%
+Sandal: 0.16%
+Shirt: 0.13%
+Bag: 0.01%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 33753.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 74.05%
+Sandal: 25.55%
+Shirt: 0.27%
+Pullover: 0.07%
+T-shirt/top: 0.04%
+Coat: 0.02%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 48609.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 49.30%
+Shirt: 30.51%
+Coat: 14.09%
+T-shirt/top: 4.95%
+Trouser: 0.88%
+Sneaker: 0.09%
+Bag: 0.06%
+Dress: 0.06%
+Ankle boot: 0.03%
+Sandal: 0.02%
+--------------------------------------------------
+
+Image: 18482.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 50.34%
+Shirt: 23.21%
+T-shirt/top: 11.29%
+Coat: 9.52%
+Trouser: 3.66%
+Sneaker: 0.69%
+Sandal: 0.44%
+Bag: 0.35%
+Ankle boot: 0.33%
+Dress: 0.17%
+--------------------------------------------------
+
+Image: 48870.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 39.85%
+Shirt: 35.05%
+Coat: 12.33%
+T-shirt/top: 12.28%
+Trouser: 0.30%
+Bag: 0.08%
+Sandal: 0.03%
+Sneaker: 0.03%
+Dress: 0.03%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 29522.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 96.03%
+Sandal: 2.80%
+T-shirt/top: 0.47%
+Pullover: 0.22%
+Shirt: 0.17%
+Sneaker: 0.13%
+Coat: 0.12%
+Ankle boot: 0.03%
+Dress: 0.02%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 9005.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 50.65%
+Shirt: 46.34%
+Pullover: 2.28%
+Trouser: 0.48%
+Coat: 0.18%
+Dress: 0.02%
+Ankle boot: 0.02%
+Bag: 0.01%
+Sandal: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 15804.jpg
+Predicted class: Sneaker
+Probabilities:
+Sneaker: 41.43%
+Sandal: 28.02%
+Dress: 20.50%
+Bag: 7.65%
+Trouser: 1.03%
+T-shirt/top: 0.44%
+Coat: 0.42%
+Shirt: 0.32%
+Ankle boot: 0.20%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 12032.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 55.61%
+Shirt: 27.71%
+Trouser: 11.60%
+Coat: 3.11%
+T-shirt/top: 1.32%
+Sneaker: 0.30%
+Sandal: 0.29%
+Bag: 0.03%
+Ankle boot: 0.02%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 57869.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 34.94%
+Shirt: 30.57%
+Pullover: 23.33%
+Trouser: 3.52%
+Bag: 3.09%
+Ankle boot: 2.97%
+Sneaker: 0.51%
+Dress: 0.51%
+Coat: 0.39%
+Sandal: 0.16%
+--------------------------------------------------
+
+Image: 22189.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 91.18%
+Trouser: 3.72%
+T-shirt/top: 3.35%
+Ankle boot: 1.27%
+Shirt: 0.16%
+Sneaker: 0.14%
+Pullover: 0.13%
+Coat: 0.05%
+Dress: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 42255.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 40950.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 96.65%
+Trouser: 2.88%
+Coat: 0.23%
+T-shirt/top: 0.20%
+Pullover: 0.03%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 25727.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 89.65%
+Trouser: 6.06%
+Shirt: 2.41%
+Sandal: 1.02%
+Pullover: 0.66%
+Dress: 0.06%
+Bag: 0.05%
+Coat: 0.05%
+Ankle boot: 0.04%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 53488.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 50.15%
+Coat: 38.73%
+Trouser: 4.84%
+Shirt: 3.40%
+T-shirt/top: 1.71%
+Sandal: 1.10%
+Bag: 0.08%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 4871.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 57.55%
+T-shirt/top: 16.96%
+Pullover: 10.35%
+Shirt: 6.82%
+Trouser: 6.03%
+Sandal: 2.17%
+Dress: 0.07%
+Bag: 0.03%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 53752.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.93%
+T-shirt/top: 0.06%
+Bag: 0.01%
+Sneaker: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 6407.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 71.08%
+T-shirt/top: 28.52%
+Ankle boot: 0.21%
+Trouser: 0.07%
+Pullover: 0.06%
+Shirt: 0.05%
+Coat: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 47378.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.66%
+Ankle boot: 1.35%
+Trouser: 0.93%
+T-shirt/top: 0.06%
+Dress: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 20009.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 78.19%
+Sandal: 11.72%
+Pullover: 4.31%
+Shirt: 4.09%
+Sneaker: 0.67%
+T-shirt/top: 0.57%
+Coat: 0.28%
+Ankle boot: 0.11%
+Dress: 0.03%
+Bag: 0.03%
+--------------------------------------------------
+
+Image: 28627.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.76%
+T-shirt/top: 0.24%
+Ankle boot: 0.01%
+Pullover: 0.00%
+Trouser: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 10578.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 77.16%
+Trouser: 20.04%
+T-shirt/top: 1.82%
+Shirt: 0.62%
+Pullover: 0.32%
+Coat: 0.02%
+Ankle boot: 0.01%
+Sneaker: 0.01%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 27330.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 52.13%
+Shirt: 24.86%
+Coat: 11.80%
+T-shirt/top: 10.10%
+Trouser: 0.71%
+Bag: 0.18%
+Sneaker: 0.12%
+Dress: 0.05%
+Sandal: 0.04%
+Ankle boot: 0.03%
+--------------------------------------------------
+
+Image: 7934.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 66.32%
+Ankle boot: 19.09%
+Sneaker: 13.12%
+Sandal: 0.78%
+T-shirt/top: 0.34%
+Shirt: 0.23%
+Pullover: 0.07%
+Bag: 0.03%
+Coat: 0.02%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43939.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 29.03%
+Coat: 22.50%
+Shirt: 22.11%
+T-shirt/top: 17.47%
+Trouser: 5.82%
+Sandal: 1.31%
+Sneaker: 0.73%
+Bag: 0.71%
+Ankle boot: 0.20%
+Dress: 0.12%
+--------------------------------------------------
+
+Image: 32981.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 94.55%
+Pullover: 3.70%
+Sneaker: 0.68%
+Coat: 0.37%
+Shirt: 0.37%
+T-shirt/top: 0.21%
+Sandal: 0.11%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 4866.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 56.02%
+Trouser: 41.44%
+Pullover: 0.95%
+T-shirt/top: 0.85%
+Coat: 0.60%
+Shirt: 0.15%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 16778.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.38%
+Ankle boot: 0.60%
+Sneaker: 0.02%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Dress: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 51510.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 47.58%
+Sandal: 17.38%
+T-shirt/top: 12.16%
+Shirt: 8.05%
+Pullover: 6.24%
+Sneaker: 3.00%
+Coat: 2.84%
+Ankle boot: 2.23%
+Bag: 0.45%
+Dress: 0.08%
+--------------------------------------------------
+
+Image: 51058.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 35.05%
+Sneaker: 28.35%
+Sandal: 25.68%
+Trouser: 8.27%
+Coat: 1.84%
+Pullover: 0.57%
+Shirt: 0.14%
+T-shirt/top: 0.04%
+Bag: 0.04%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 58493.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 78.84%
+T-shirt/top: 8.70%
+Trouser: 4.85%
+Shirt: 3.01%
+Pullover: 2.54%
+Sneaker: 1.63%
+Ankle boot: 0.37%
+Coat: 0.04%
+Bag: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 15918.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 94.30%
+Ankle boot: 5.13%
+T-shirt/top: 0.56%
+Trouser: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 7564.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 72.26%
+Sneaker: 27.69%
+Ankle boot: 0.05%
+Bag: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 3412.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 72.60%
+Shirt: 24.41%
+T-shirt/top: 1.98%
+Coat: 0.96%
+Sneaker: 0.04%
+Trouser: 0.01%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 51847.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.77%
+Trouser: 0.11%
+Sneaker: 0.06%
+T-shirt/top: 0.04%
+Dress: 0.01%
+Shirt: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 9418.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 59.41%
+T-shirt/top: 18.75%
+Shirt: 10.29%
+Pullover: 8.86%
+Sandal: 1.22%
+Coat: 0.85%
+Sneaker: 0.35%
+Ankle boot: 0.18%
+Bag: 0.10%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 53747.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 14110.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 77.63%
+T-shirt/top: 21.09%
+Shirt: 0.72%
+Sandal: 0.52%
+Pullover: 0.04%
+Dress: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 8707.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 69.78%
+Coat: 11.03%
+T-shirt/top: 8.42%
+Shirt: 6.17%
+Pullover: 3.87%
+Bag: 0.33%
+Sandal: 0.27%
+Sneaker: 0.05%
+Ankle boot: 0.04%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 27957.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.93%
+Dress: 0.03%
+Trouser: 0.02%
+Shirt: 0.02%
+Sandal: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 3450.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 93.20%
+Pullover: 4.32%
+Shirt: 2.17%
+Trouser: 0.26%
+Bag: 0.02%
+Coat: 0.02%
+Sandal: 0.01%
+Ankle boot: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 34961.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 70.52%
+Trouser: 27.73%
+Pullover: 1.05%
+T-shirt/top: 0.31%
+Coat: 0.30%
+Shirt: 0.08%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 12488.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 97.99%
+Shirt: 1.11%
+Trouser: 0.43%
+Pullover: 0.35%
+Sandal: 0.07%
+Coat: 0.05%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 40458.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 71.80%
+T-shirt/top: 19.39%
+Trouser: 3.66%
+Ankle boot: 2.26%
+Shirt: 1.73%
+Pullover: 1.06%
+Coat: 0.06%
+Sneaker: 0.03%
+Dress: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 43483.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 91.86%
+Trouser: 5.48%
+Coat: 1.52%
+T-shirt/top: 0.66%
+Shirt: 0.45%
+Sandal: 0.02%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 56174.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 50.16%
+Shirt: 31.36%
+Coat: 16.21%
+T-shirt/top: 1.20%
+Dress: 0.53%
+Trouser: 0.33%
+Sneaker: 0.16%
+Bag: 0.03%
+Ankle boot: 0.02%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 19690.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 88.09%
+Sandal: 9.54%
+T-shirt/top: 2.03%
+Shirt: 0.16%
+Pullover: 0.15%
+Coat: 0.02%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 26809.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.04%
+Shirt: 1.46%
+T-shirt/top: 0.27%
+Coat: 0.22%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 55115.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.24%
+Ankle boot: 0.68%
+Sneaker: 0.06%
+T-shirt/top: 0.02%
+Trouser: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 19063.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 91.14%
+Shirt: 5.17%
+Trouser: 1.50%
+T-shirt/top: 1.41%
+Coat: 0.46%
+Sandal: 0.30%
+Bag: 0.01%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 10177.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 77.53%
+Ankle boot: 22.46%
+Sneaker: 0.01%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 25334.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 45.65%
+T-shirt/top: 17.64%
+Trouser: 14.07%
+Pullover: 12.27%
+Coat: 5.31%
+Sandal: 2.33%
+Bag: 1.18%
+Sneaker: 1.13%
+Ankle boot: 0.32%
+Dress: 0.10%
+--------------------------------------------------
+
+Image: 48186.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 82.06%
+Shirt: 14.70%
+Trouser: 1.46%
+Pullover: 1.23%
+Bag: 0.27%
+Dress: 0.11%
+Sandal: 0.10%
+Ankle boot: 0.05%
+Coat: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 3908.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.95%
+T-shirt/top: 0.05%
+Shirt: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 16423.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 59.08%
+Pullover: 34.46%
+Shirt: 2.32%
+Coat: 1.88%
+T-shirt/top: 1.61%
+Sandal: 0.58%
+Sneaker: 0.07%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 47507.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 73.57%
+Shirt: 24.30%
+T-shirt/top: 0.94%
+Coat: 0.48%
+Trouser: 0.43%
+Sneaker: 0.24%
+Ankle boot: 0.02%
+Dress: 0.01%
+Bag: 0.01%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 37064.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 30.43%
+Shirt: 24.76%
+Trouser: 18.11%
+Coat: 12.96%
+T-shirt/top: 12.92%
+Bag: 0.38%
+Sneaker: 0.22%
+Ankle boot: 0.10%
+Sandal: 0.07%
+Dress: 0.06%
+--------------------------------------------------
+
+Image: 47126.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 76.63%
+Shirt: 17.25%
+Trouser: 1.90%
+Bag: 1.66%
+Ankle boot: 1.42%
+Pullover: 1.04%
+Sneaker: 0.03%
+Dress: 0.02%
+Sandal: 0.02%
+Coat: 0.01%
+--------------------------------------------------
+
+Image: 37931.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 88.72%
+Sandal: 10.16%
+Pullover: 1.02%
+Shirt: 0.06%
+T-shirt/top: 0.02%
+Coat: 0.02%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 49147.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 56.13%
+Shirt: 18.51%
+Pullover: 16.90%
+Coat: 7.78%
+Sandal: 0.32%
+Trouser: 0.28%
+Bag: 0.10%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 36164.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 61.49%
+T-shirt/top: 14.19%
+Sandal: 12.47%
+Pullover: 6.49%
+Coat: 3.82%
+Shirt: 1.12%
+Sneaker: 0.30%
+Ankle boot: 0.08%
+Bag: 0.02%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 37186.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Trouser: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 21947.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 98.56%
+Shirt: 1.43%
+Trouser: 0.00%
+Sandal: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 55471.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 50.38%
+Coat: 38.42%
+Pullover: 6.99%
+Trouser: 3.24%
+Shirt: 0.90%
+Sandal: 0.07%
+Bag: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 57352.jpg
+Predicted class: Dress
+Probabilities:
+Dress: 83.47%
+Trouser: 5.03%
+T-shirt/top: 4.13%
+Shirt: 3.21%
+Coat: 2.65%
+Bag: 0.81%
+Pullover: 0.65%
+Sneaker: 0.04%
+Ankle boot: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 46437.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 78.40%
+Sandal: 8.36%
+Bag: 5.20%
+T-shirt/top: 4.92%
+Shirt: 1.73%
+Pullover: 0.84%
+Sneaker: 0.51%
+Coat: 0.03%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 31222.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.87%
+Coat: 0.09%
+T-shirt/top: 0.04%
+Shirt: 0.00%
+Trouser: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43122.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 82.02%
+Sneaker: 17.96%
+Dress: 0.01%
+Trouser: 0.00%
+Sandal: 0.00%
+Shirt: 0.00%
+T-shirt/top: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 55334.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 56.54%
+T-shirt/top: 36.33%
+Pullover: 2.97%
+Ankle boot: 2.65%
+Bag: 0.77%
+Trouser: 0.23%
+Sneaker: 0.22%
+Dress: 0.21%
+Sandal: 0.07%
+Coat: 0.02%
+--------------------------------------------------
+
+Image: 36430.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 51.02%
+Shirt: 28.12%
+T-shirt/top: 8.73%
+Coat: 8.27%
+Trouser: 3.19%
+Sneaker: 0.23%
+Sandal: 0.13%
+Ankle boot: 0.12%
+Bag: 0.12%
+Dress: 0.06%
+--------------------------------------------------
+
+Image: 16991.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 66.02%
+Shirt: 28.41%
+T-shirt/top: 4.06%
+Coat: 0.88%
+Trouser: 0.45%
+Sneaker: 0.05%
+Sandal: 0.05%
+Dress: 0.02%
+Bag: 0.02%
+Ankle boot: 0.02%
+--------------------------------------------------
+
+Image: 48911.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 62.53%
+Coat: 19.31%
+Shirt: 9.79%
+T-shirt/top: 7.35%
+Trouser: 0.87%
+Bag: 0.09%
+Sneaker: 0.03%
+Dress: 0.01%
+Sandal: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 33978.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.96%
+T-shirt/top: 0.04%
+Shirt: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 41302.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 36.74%
+Shirt: 31.09%
+Pullover: 17.46%
+Coat: 14.27%
+Sandal: 0.24%
+Trouser: 0.21%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 7860.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 95.89%
+Ankle boot: 3.92%
+Trouser: 0.11%
+T-shirt/top: 0.07%
+Shirt: 0.01%
+Sneaker: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 34828.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 35.19%
+Trouser: 28.09%
+Ankle boot: 21.00%
+T-shirt/top: 8.54%
+Shirt: 4.31%
+Sneaker: 1.47%
+Pullover: 1.09%
+Coat: 0.21%
+Dress: 0.08%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 9436.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 93.96%
+Pullover: 5.37%
+Coat: 0.45%
+Shirt: 0.18%
+Trouser: 0.03%
+Sandal: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 10220.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 70.51%
+Shirt: 24.22%
+Trouser: 4.48%
+Dress: 0.37%
+Pullover: 0.26%
+Bag: 0.13%
+Sandal: 0.02%
+Ankle boot: 0.01%
+Coat: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 4030.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.89%
+Trouser: 1.09%
+Ankle boot: 0.01%
+T-shirt/top: 0.01%
+Coat: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 9715.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 84.44%
+Ankle boot: 15.54%
+Trouser: 0.01%
+Sneaker: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 4362.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 56.24%
+Shirt: 24.36%
+Trouser: 13.31%
+Coat: 2.02%
+T-shirt/top: 1.90%
+Sneaker: 1.81%
+Ankle boot: 0.13%
+Bag: 0.12%
+Dress: 0.06%
+Sandal: 0.05%
+--------------------------------------------------
+
+Image: 27744.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.96%
+Ankle boot: 0.04%
+Sneaker: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Dress: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 6687.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 65.20%
+T-shirt/top: 20.18%
+Pullover: 10.36%
+Sandal: 3.12%
+Coat: 0.64%
+Sneaker: 0.26%
+Trouser: 0.09%
+Ankle boot: 0.07%
+Bag: 0.07%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 36237.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 95.22%
+Pullover: 3.91%
+Coat: 0.50%
+T-shirt/top: 0.30%
+Sandal: 0.07%
+Trouser: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 24684.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 40.99%
+Shirt: 32.34%
+Trouser: 15.17%
+T-shirt/top: 8.34%
+Coat: 2.49%
+Sandal: 0.62%
+Sneaker: 0.03%
+Bag: 0.01%
+Dress: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 43025.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 49.26%
+Pullover: 32.36%
+Sneaker: 8.56%
+Coat: 5.87%
+Ankle boot: 3.52%
+Trouser: 0.16%
+Shirt: 0.11%
+Dress: 0.06%
+T-shirt/top: 0.06%
+Bag: 0.04%
+--------------------------------------------------
+
+Image: 14674.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 89.27%
+Shirt: 9.99%
+Coat: 0.48%
+T-shirt/top: 0.26%
+Sneaker: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 8248.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 69.53%
+Sandal: 26.52%
+Shirt: 1.34%
+Trouser: 1.22%
+Pullover: 0.97%
+Dress: 0.32%
+Ankle boot: 0.07%
+Coat: 0.02%
+Bag: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 36066.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.86%
+Ankle boot: 0.14%
+Sneaker: 0.00%
+T-shirt/top: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 21507.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 67.31%
+Trouser: 19.76%
+Sandal: 10.54%
+Shirt: 1.60%
+Pullover: 0.41%
+Coat: 0.38%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 34634.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 77.58%
+T-shirt/top: 17.88%
+Trouser: 2.09%
+Pullover: 1.22%
+Ankle boot: 0.52%
+Shirt: 0.51%
+Coat: 0.16%
+Sneaker: 0.02%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 14719.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 48.74%
+Pullover: 27.51%
+T-shirt/top: 13.67%
+Coat: 7.43%
+Trouser: 1.12%
+Sandal: 0.84%
+Sneaker: 0.52%
+Ankle boot: 0.16%
+Bag: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 9530.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 67.77%
+Shirt: 21.38%
+T-shirt/top: 7.36%
+Coat: 2.46%
+Trouser: 0.65%
+Dress: 0.12%
+Ankle boot: 0.09%
+Sneaker: 0.07%
+Bag: 0.06%
+Sandal: 0.04%
+--------------------------------------------------
+
+Image: 3933.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.74%
+T-shirt/top: 1.93%
+Pullover: 0.27%
+Shirt: 0.06%
+Coat: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 21136.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 97.67%
+Trouser: 1.20%
+T-shirt/top: 0.67%
+Shirt: 0.45%
+Pullover: 0.01%
+Coat: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 6732.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 80.02%
+Shirt: 19.13%
+Coat: 0.46%
+T-shirt/top: 0.39%
+Sneaker: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 43073.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 71.66%
+Pullover: 16.01%
+Coat: 8.01%
+Shirt: 4.17%
+Trouser: 0.09%
+Sandal: 0.04%
+Bag: 0.01%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 52069.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 71.47%
+Trouser: 20.24%
+Pullover: 3.89%
+T-shirt/top: 3.14%
+Shirt: 1.19%
+Coat: 0.05%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 30787.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 91.10%
+Coat: 5.30%
+Shirt: 2.71%
+T-shirt/top: 0.56%
+Trouser: 0.30%
+Sneaker: 0.03%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 54187.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 61.02%
+Sandal: 34.71%
+T-shirt/top: 3.43%
+Coat: 0.37%
+Pullover: 0.23%
+Shirt: 0.19%
+Dress: 0.04%
+Bag: 0.01%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 50764.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 55.00%
+T-shirt/top: 24.62%
+Trouser: 16.81%
+Pullover: 1.34%
+Ankle boot: 1.00%
+Shirt: 0.84%
+Coat: 0.33%
+Sneaker: 0.05%
+Dress: 0.01%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 50612.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 99.97%
+Sandal: 0.02%
+Sneaker: 0.01%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Dress: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 52384.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 33.06%
+Pullover: 28.94%
+T-shirt/top: 13.16%
+Coat: 11.75%
+Trouser: 11.40%
+Sandal: 1.23%
+Sneaker: 0.21%
+Bag: 0.21%
+Ankle boot: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 45303.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 79.40%
+Shirt: 7.93%
+Pullover: 6.39%
+Trouser: 5.79%
+Coat: 0.29%
+Bag: 0.09%
+Sandal: 0.08%
+Ankle boot: 0.01%
+Dress: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 37306.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 96.75%
+Sandal: 2.76%
+Trouser: 0.28%
+Shirt: 0.14%
+Coat: 0.04%
+Pullover: 0.03%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 39613.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 32.33%
+Pullover: 26.93%
+Shirt: 15.88%
+Trouser: 14.55%
+Coat: 9.30%
+Sandal: 0.61%
+Bag: 0.27%
+Ankle boot: 0.06%
+Sneaker: 0.05%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 41734.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 32.94%
+Shirt: 25.15%
+T-shirt/top: 21.34%
+Coat: 10.68%
+Trouser: 9.20%
+Bag: 0.24%
+Sandal: 0.15%
+Ankle boot: 0.13%
+Sneaker: 0.13%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 59081.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 61.26%
+Shirt: 37.28%
+Pullover: 1.42%
+Bag: 0.03%
+Trouser: 0.01%
+Coat: 0.00%
+Dress: 0.00%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 20489.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 93.75%
+Shirt: 5.62%
+Sandal: 0.52%
+Trouser: 0.08%
+Pullover: 0.03%
+Coat: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 33250.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 53.82%
+Pullover: 21.02%
+Coat: 7.93%
+Sneaker: 6.15%
+Shirt: 3.79%
+T-shirt/top: 3.41%
+Ankle boot: 1.31%
+Bag: 1.26%
+Sandal: 0.79%
+Dress: 0.51%
+--------------------------------------------------
+
+Image: 5288.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 43.37%
+Trouser: 23.85%
+Sandal: 16.35%
+Pullover: 8.71%
+Coat: 4.42%
+Shirt: 2.35%
+Ankle boot: 0.68%
+Bag: 0.14%
+Sneaker: 0.09%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 56253.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 94.76%
+T-shirt/top: 3.38%
+Coat: 1.14%
+Trouser: 0.66%
+Shirt: 0.05%
+Pullover: 0.01%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 24603.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 66.97%
+Pullover: 29.95%
+T-shirt/top: 2.84%
+Coat: 0.24%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 18918.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 55.55%
+Pullover: 37.26%
+Shirt: 3.76%
+Coat: 1.29%
+Sandal: 1.02%
+T-shirt/top: 0.98%
+Sneaker: 0.10%
+Ankle boot: 0.02%
+Bag: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 8627.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 43.42%
+Shirt: 28.18%
+Coat: 18.03%
+T-shirt/top: 7.49%
+Trouser: 2.40%
+Bag: 0.17%
+Sneaker: 0.15%
+Dress: 0.06%
+Ankle boot: 0.06%
+Sandal: 0.06%
+--------------------------------------------------
+
+Image: 3695.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 47.38%
+Trouser: 14.31%
+Shirt: 13.72%
+Coat: 10.00%
+T-shirt/top: 8.75%
+Sneaker: 2.42%
+Sandal: 1.58%
+Ankle boot: 1.01%
+Bag: 0.55%
+Dress: 0.28%
+--------------------------------------------------
+
+Image: 19836.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 93.75%
+Trouser: 5.08%
+T-shirt/top: 0.75%
+Pullover: 0.28%
+Shirt: 0.13%
+Coat: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 58515.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 47.27%
+Shirt: 23.81%
+T-shirt/top: 17.58%
+Trouser: 3.57%
+Coat: 3.26%
+Sandal: 3.07%
+Bag: 1.02%
+Sneaker: 0.40%
+Ankle boot: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 29499.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 78.56%
+Sandal: 8.83%
+Trouser: 5.98%
+Sneaker: 4.79%
+Shirt: 0.80%
+T-shirt/top: 0.67%
+Pullover: 0.17%
+Dress: 0.16%
+Coat: 0.02%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 36206.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 85.19%
+Coat: 9.12%
+Pullover: 4.81%
+Shirt: 0.44%
+Sandal: 0.44%
+Trouser: 0.01%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 43199.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.99%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 28777.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 95.30%
+Shirt: 2.45%
+Trouser: 1.44%
+T-shirt/top: 0.42%
+Coat: 0.33%
+Sandal: 0.05%
+Sneaker: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 13381.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 65.93%
+T-shirt/top: 30.27%
+Trouser: 2.83%
+Shirt: 0.35%
+Pullover: 0.30%
+Ankle boot: 0.17%
+Coat: 0.12%
+Sneaker: 0.01%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 13090.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 59.80%
+Shirt: 30.45%
+Pullover: 6.75%
+Trouser: 2.39%
+Coat: 0.30%
+Sneaker: 0.27%
+Ankle boot: 0.02%
+Dress: 0.01%
+Bag: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 20231.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 53.90%
+Sandal: 42.82%
+Pullover: 2.07%
+T-shirt/top: 0.70%
+Shirt: 0.46%
+Coat: 0.04%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 41683.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 33.44%
+Pullover: 18.90%
+Trouser: 18.76%
+Shirt: 18.51%
+Coat: 9.37%
+Sandal: 0.69%
+Bag: 0.20%
+Ankle boot: 0.06%
+Sneaker: 0.05%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 50352.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.86%
+Trouser: 0.14%
+Coat: 0.00%
+T-shirt/top: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43266.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 40.25%
+Shirt: 31.71%
+Trouser: 16.90%
+T-shirt/top: 5.53%
+Sandal: 4.22%
+Coat: 0.82%
+Sneaker: 0.44%
+Ankle boot: 0.10%
+Dress: 0.02%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 37785.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 47.54%
+Pullover: 40.65%
+T-shirt/top: 7.10%
+Sandal: 2.35%
+Shirt: 1.52%
+Coat: 0.78%
+Sneaker: 0.03%
+Bag: 0.02%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 39551.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 86.61%
+T-shirt/top: 7.18%
+Shirt: 5.34%
+Trouser: 0.46%
+Sandal: 0.39%
+Pullover: 0.03%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 5630.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 39.60%
+Shirt: 25.96%
+T-shirt/top: 17.23%
+Coat: 10.25%
+Trouser: 6.24%
+Bag: 0.27%
+Sneaker: 0.15%
+Sandal: 0.14%
+Ankle boot: 0.12%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 32939.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 91.81%
+Trouser: 6.14%
+Sandal: 1.18%
+Pullover: 0.52%
+Shirt: 0.32%
+Coat: 0.02%
+Ankle boot: 0.01%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 25225.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.80%
+Shirt: 0.14%
+Trouser: 0.06%
+Sandal: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 2889.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 90.49%
+Shirt: 4.32%
+Trouser: 2.31%
+Pullover: 1.24%
+Bag: 1.13%
+Sandal: 0.31%
+Coat: 0.18%
+Dress: 0.01%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 28541.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 86.38%
+Ankle boot: 4.41%
+Trouser: 3.37%
+Sneaker: 3.06%
+Shirt: 1.11%
+Pullover: 0.59%
+T-shirt/top: 0.54%
+Dress: 0.30%
+Coat: 0.18%
+Bag: 0.06%
+--------------------------------------------------
+
+Image: 35802.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 47.09%
+Shirt: 28.26%
+Coat: 11.43%
+T-shirt/top: 10.06%
+Trouser: 2.84%
+Sandal: 0.09%
+Bag: 0.08%
+Sneaker: 0.07%
+Ankle boot: 0.06%
+Dress: 0.03%
+--------------------------------------------------
+
+Image: 34043.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 50.59%
+T-shirt/top: 31.63%
+Coat: 11.81%
+Shirt: 5.58%
+Trouser: 0.23%
+Sandal: 0.14%
+Bag: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 11585.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 97.91%
+Shirt: 1.65%
+Coat: 0.16%
+T-shirt/top: 0.15%
+Trouser: 0.12%
+Sandal: 0.01%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 14104.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 59.84%
+Sandal: 39.11%
+Pullover: 0.45%
+Shirt: 0.44%
+Coat: 0.10%
+T-shirt/top: 0.06%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 50942.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 48855.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 64.72%
+Shirt: 20.50%
+Coat: 9.00%
+T-shirt/top: 4.70%
+Trouser: 0.74%
+Sneaker: 0.11%
+Bag: 0.09%
+Dress: 0.06%
+Ankle boot: 0.04%
+Sandal: 0.04%
+--------------------------------------------------
+
+Image: 29504.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.99%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 35084.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 100.00%
+Coat: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+Pullover: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 21707.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.22%
+Ankle boot: 0.44%
+Sneaker: 0.34%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 24642.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 79.53%
+Shirt: 11.57%
+Pullover: 7.58%
+Coat: 1.09%
+Trouser: 0.11%
+Bag: 0.06%
+Sandal: 0.03%
+Dress: 0.02%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 32573.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.55%
+Ankle boot: 0.41%
+Trouser: 0.03%
+T-shirt/top: 0.01%
+Sneaker: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 1597.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 97.78%
+Shirt: 2.02%
+Bag: 0.09%
+Trouser: 0.05%
+Sandal: 0.03%
+Pullover: 0.02%
+Dress: 0.01%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 13463.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 46.01%
+Shirt: 25.26%
+T-shirt/top: 12.52%
+Pullover: 8.10%
+Sandal: 6.06%
+Sneaker: 0.75%
+Ankle boot: 0.47%
+Dress: 0.41%
+Coat: 0.22%
+Bag: 0.19%
+--------------------------------------------------
+
+Image: 48223.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 55.49%
+T-shirt/top: 21.35%
+Coat: 12.57%
+Shirt: 6.54%
+Pullover: 3.51%
+Bag: 0.32%
+Sandal: 0.15%
+Sneaker: 0.03%
+Ankle boot: 0.02%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 16861.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 29.73%
+Trouser: 29.41%
+T-shirt/top: 21.53%
+Shirt: 13.62%
+Pullover: 5.21%
+Sandal: 0.25%
+Bag: 0.21%
+Sneaker: 0.02%
+Ankle boot: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 44683.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.89%
+T-shirt/top: 0.08%
+Shirt: 0.03%
+Coat: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 37951.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 87.98%
+Shirt: 5.31%
+T-shirt/top: 4.17%
+Sandal: 1.38%
+Pullover: 0.87%
+Coat: 0.15%
+Bag: 0.11%
+Ankle boot: 0.03%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 58318.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 59.36%
+Shirt: 27.87%
+Coat: 6.39%
+T-shirt/top: 5.95%
+Trouser: 0.31%
+Bag: 0.04%
+Sneaker: 0.03%
+Sandal: 0.02%
+Ankle boot: 0.02%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 9822.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 53.27%
+Shirt: 22.20%
+T-shirt/top: 10.91%
+Pullover: 9.14%
+Trouser: 2.56%
+Coat: 1.91%
+Sneaker: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 40982.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 45.10%
+Shirt: 25.77%
+Coat: 18.64%
+T-shirt/top: 8.18%
+Trouser: 2.01%
+Sandal: 0.20%
+Bag: 0.05%
+Sneaker: 0.03%
+Dress: 0.02%
+Ankle boot: 0.02%
+--------------------------------------------------
+
+Image: 50035.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 97.85%
+Sneaker: 2.15%
+Sandal: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 36358.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 100.00%
+Coat: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+T-shirt/top: 0.00%
+Pullover: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 51640.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Ankle boot: 0.00%
+T-shirt/top: 0.00%
+Sneaker: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 18882.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 51.31%
+Pullover: 33.80%
+Sandal: 8.38%
+Shirt: 6.00%
+T-shirt/top: 0.30%
+Coat: 0.21%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 48347.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 38.86%
+Coat: 32.69%
+Shirt: 12.51%
+Trouser: 11.75%
+T-shirt/top: 3.67%
+Sneaker: 0.17%
+Bag: 0.16%
+Sandal: 0.08%
+Dress: 0.05%
+Ankle boot: 0.05%
+--------------------------------------------------
+
+Image: 41601.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 74.04%
+Sandal: 20.13%
+T-shirt/top: 5.74%
+Pullover: 0.03%
+Coat: 0.03%
+Shirt: 0.03%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 20217.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 68.46%
+Sandal: 31.13%
+T-shirt/top: 0.21%
+Coat: 0.15%
+Pullover: 0.04%
+Shirt: 0.02%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 49741.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 100.00%
+Coat: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+T-shirt/top: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 38407.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 58.97%
+Trouser: 32.03%
+Sandal: 3.07%
+Pullover: 2.89%
+Shirt: 2.64%
+Coat: 0.23%
+Ankle boot: 0.06%
+Bag: 0.06%
+Dress: 0.04%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 43239.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 40.50%
+Shirt: 31.94%
+T-shirt/top: 13.32%
+Coat: 9.30%
+Trouser: 3.28%
+Sneaker: 0.45%
+Sandal: 0.40%
+Bag: 0.36%
+Ankle boot: 0.33%
+Dress: 0.12%
+--------------------------------------------------
+
+Image: 43656.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.94%
+T-shirt/top: 0.06%
+Bag: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Trouser: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 58151.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 93.45%
+Pullover: 4.22%
+Shirt: 2.22%
+Coat: 0.09%
+Trouser: 0.01%
+Sandal: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 16232.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 80.75%
+Shirt: 12.43%
+T-shirt/top: 2.84%
+Coat: 2.05%
+Trouser: 1.62%
+Sneaker: 0.23%
+Ankle boot: 0.06%
+Bag: 0.01%
+Dress: 0.01%
+Sandal: 0.01%
+--------------------------------------------------
+
+Image: 41471.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 42.42%
+Trouser: 24.31%
+Sandal: 21.83%
+Pullover: 6.40%
+Coat: 4.72%
+Shirt: 0.31%
+Bag: 0.01%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 11862.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 87.46%
+Pullover: 4.98%
+Trouser: 4.45%
+Shirt: 2.54%
+Coat: 0.36%
+Sandal: 0.16%
+Bag: 0.04%
+Ankle boot: 0.01%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 38444.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 94.32%
+Trouser: 5.35%
+Shirt: 0.25%
+Bag: 0.07%
+Sandal: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 20984.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 98.75%
+Trouser: 0.54%
+Shirt: 0.50%
+Pullover: 0.19%
+Sandal: 0.02%
+Coat: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 8382.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 61.84%
+Shirt: 15.57%
+Coat: 13.85%
+T-shirt/top: 6.33%
+Trouser: 1.88%
+Sneaker: 0.17%
+Dress: 0.12%
+Bag: 0.11%
+Ankle boot: 0.06%
+Sandal: 0.06%
+--------------------------------------------------
+
+Image: 28004.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.26%
+Trouser: 0.34%
+Dress: 0.32%
+Shirt: 0.07%
+Sandal: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 8877.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 82.13%
+Coat: 9.26%
+Shirt: 7.71%
+T-shirt/top: 0.80%
+Sneaker: 0.05%
+Trouser: 0.05%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 41759.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 89.76%
+T-shirt/top: 7.63%
+Shirt: 2.52%
+Coat: 0.05%
+Trouser: 0.02%
+Pullover: 0.02%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 24711.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 60.53%
+Sandal: 18.98%
+Trouser: 10.33%
+Pullover: 6.00%
+Coat: 3.83%
+Shirt: 0.31%
+Bag: 0.02%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 44987.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.84%
+Sneaker: 0.16%
+Ankle boot: 0.00%
+T-shirt/top: 0.00%
+Bag: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 28446.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 48.79%
+Pullover: 33.74%
+T-shirt/top: 11.62%
+Coat: 3.02%
+Trouser: 2.33%
+Bag: 0.17%
+Ankle boot: 0.15%
+Sneaker: 0.09%
+Dress: 0.06%
+Sandal: 0.03%
+--------------------------------------------------
+
+Image: 41356.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.93%
+T-shirt/top: 0.04%
+Bag: 0.03%
+Sneaker: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Ankle boot: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 35652.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 66.66%
+T-shirt/top: 29.11%
+Trouser: 1.92%
+Ankle boot: 1.47%
+Shirt: 0.67%
+Pullover: 0.17%
+Sneaker: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 26661.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 56.04%
+Sandal: 30.63%
+Sneaker: 7.24%
+Trouser: 4.16%
+Shirt: 1.01%
+Pullover: 0.51%
+T-shirt/top: 0.28%
+Coat: 0.06%
+Dress: 0.05%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 25772.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 63.85%
+Sandal: 35.25%
+Bag: 0.44%
+Shirt: 0.41%
+Coat: 0.03%
+Sneaker: 0.01%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+--------------------------------------------------
+
+Image: 6360.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 89.39%
+Sneaker: 7.51%
+Sandal: 2.08%
+Trouser: 0.81%
+Shirt: 0.08%
+Pullover: 0.06%
+T-shirt/top: 0.04%
+Dress: 0.02%
+Coat: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 49969.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 94.48%
+Shirt: 3.84%
+Coat: 1.10%
+Trouser: 0.26%
+Sandal: 0.15%
+T-shirt/top: 0.11%
+Sneaker: 0.05%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43909.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 10430.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 79.56%
+Trouser: 10.56%
+Shirt: 6.80%
+Coat: 1.53%
+T-shirt/top: 1.31%
+Sandal: 0.16%
+Sneaker: 0.06%
+Bag: 0.01%
+Ankle boot: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 43818.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 75.11%
+Pullover: 13.34%
+T-shirt/top: 5.90%
+Coat: 4.76%
+Trouser: 0.53%
+Sandal: 0.15%
+Ankle boot: 0.10%
+Bag: 0.05%
+Dress: 0.04%
+Sneaker: 0.02%
+--------------------------------------------------
+
+Image: 26243.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 56.97%
+Shirt: 39.45%
+Sandal: 2.46%
+Bag: 0.88%
+Coat: 0.18%
+Pullover: 0.02%
+Sneaker: 0.02%
+Ankle boot: 0.01%
+Trouser: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 56311.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.73%
+T-shirt/top: 1.01%
+Shirt: 0.24%
+Ankle boot: 0.01%
+Sneaker: 0.01%
+Pullover: 0.00%
+Trouser: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 36297.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 59.56%
+Pullover: 17.66%
+Sandal: 16.72%
+T-shirt/top: 2.14%
+Coat: 1.96%
+Shirt: 1.95%
+Bag: 0.01%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 3557.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.93%
+T-shirt/top: 0.04%
+Ankle boot: 0.01%
+Sneaker: 0.01%
+Trouser: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 22504.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.78%
+Trouser: 0.13%
+Ankle boot: 0.06%
+T-shirt/top: 0.01%
+Sneaker: 0.01%
+Pullover: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 19106.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.57%
+Trouser: 0.40%
+Pullover: 0.02%
+Shirt: 0.01%
+T-shirt/top: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 54164.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 74.75%
+Shirt: 16.35%
+Coat: 6.30%
+T-shirt/top: 1.55%
+Trouser: 0.74%
+Sneaker: 0.14%
+Dress: 0.06%
+Bag: 0.05%
+Ankle boot: 0.05%
+Sandal: 0.01%
+--------------------------------------------------
+
+Image: 12960.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 49.28%
+T-shirt/top: 16.27%
+Shirt: 16.16%
+Coat: 13.32%
+Trouser: 4.09%
+Sandal: 0.30%
+Sneaker: 0.22%
+Bag: 0.18%
+Dress: 0.10%
+Ankle boot: 0.09%
+--------------------------------------------------
+
+Image: 8088.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 50.81%
+Ankle boot: 31.61%
+Sneaker: 5.90%
+Trouser: 5.63%
+Shirt: 2.62%
+Pullover: 1.60%
+T-shirt/top: 1.41%
+Coat: 0.21%
+Dress: 0.20%
+Bag: 0.02%
+--------------------------------------------------
+
+Image: 26644.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 95.11%
+Ankle boot: 4.55%
+Sneaker: 0.34%
+T-shirt/top: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 30902.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 55.45%
+Trouser: 33.97%
+Shirt: 4.33%
+Sandal: 2.95%
+T-shirt/top: 2.02%
+Pullover: 1.26%
+Bag: 0.01%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 34604.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 43.19%
+T-shirt/top: 18.57%
+Trouser: 17.02%
+Shirt: 13.47%
+Coat: 5.53%
+Bag: 1.04%
+Sneaker: 0.39%
+Ankle boot: 0.30%
+Sandal: 0.25%
+Dress: 0.24%
+--------------------------------------------------
+
+Image: 26930.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 69.91%
+Trouser: 22.42%
+Pullover: 4.34%
+Shirt: 1.93%
+Coat: 0.84%
+T-shirt/top: 0.56%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 19080.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 53.12%
+Sandal: 28.52%
+Trouser: 12.08%
+Shirt: 3.04%
+T-shirt/top: 2.12%
+Coat: 1.07%
+Sneaker: 0.02%
+Bag: 0.02%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 39405.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 53.30%
+Shirt: 33.64%
+T-shirt/top: 6.45%
+Coat: 5.61%
+Trouser: 0.44%
+Sneaker: 0.16%
+Bag: 0.15%
+Dress: 0.11%
+Ankle boot: 0.07%
+Sandal: 0.06%
+--------------------------------------------------
+
+Image: 59039.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 37.46%
+Shirt: 31.61%
+Coat: 14.35%
+T-shirt/top: 11.37%
+Trouser: 4.73%
+Bag: 0.15%
+Sneaker: 0.13%
+Ankle boot: 0.09%
+Sandal: 0.06%
+Dress: 0.05%
+--------------------------------------------------
+
+Image: 30052.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 7183.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 58.59%
+Pullover: 34.36%
+T-shirt/top: 5.71%
+Coat: 0.98%
+Sandal: 0.31%
+Trouser: 0.06%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 3476.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 64.43%
+Shirt: 24.77%
+T-shirt/top: 5.19%
+Coat: 3.07%
+Trouser: 1.87%
+Sneaker: 0.52%
+Ankle boot: 0.06%
+Bag: 0.05%
+Sandal: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 20447.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 80.36%
+Pullover: 7.12%
+Shirt: 7.08%
+Trouser: 3.51%
+Sandal: 1.19%
+Coat: 0.50%
+Ankle boot: 0.15%
+Bag: 0.07%
+Sneaker: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 56573.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 74.60%
+Pullover: 12.24%
+Shirt: 8.09%
+Coat: 3.13%
+Sandal: 1.88%
+Trouser: 0.07%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 34561.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 77.37%
+Trouser: 10.67%
+Shirt: 8.74%
+Pullover: 1.57%
+Bag: 1.50%
+Ankle boot: 0.07%
+Sandal: 0.05%
+Coat: 0.02%
+Dress: 0.01%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 9024.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.04%
+Ankle boot: 0.88%
+T-shirt/top: 0.07%
+Sneaker: 0.01%
+Trouser: 0.01%
+Shirt: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 17626.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 72.17%
+Shirt: 20.20%
+T-shirt/top: 4.93%
+Coat: 1.52%
+Trouser: 0.33%
+Sneaker: 0.32%
+Ankle boot: 0.28%
+Bag: 0.22%
+Dress: 0.02%
+Sandal: 0.02%
+--------------------------------------------------
+
+Image: 23237.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 79.65%
+Pullover: 9.16%
+Sandal: 4.95%
+T-shirt/top: 4.47%
+Shirt: 1.73%
+Coat: 0.04%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 14117.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 51.80%
+T-shirt/top: 47.76%
+Shirt: 0.31%
+Coat: 0.10%
+Bag: 0.03%
+Pullover: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 27628.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 57.60%
+T-shirt/top: 30.78%
+Sandal: 11.42%
+Bag: 0.11%
+Coat: 0.07%
+Ankle boot: 0.01%
+Sneaker: 0.01%
+Pullover: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 9914.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 98.11%
+Sandal: 1.11%
+Shirt: 0.65%
+Trouser: 0.10%
+Pullover: 0.01%
+Ankle boot: 0.01%
+Bag: 0.01%
+Dress: 0.01%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 24888.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 98.56%
+Shirt: 1.18%
+Coat: 0.20%
+T-shirt/top: 0.05%
+Trouser: 0.00%
+Sneaker: 0.00%
+Sandal: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 46948.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 42.75%
+Shirt: 20.86%
+Coat: 20.41%
+Trouser: 10.50%
+T-shirt/top: 4.79%
+Sneaker: 0.26%
+Bag: 0.23%
+Sandal: 0.08%
+Ankle boot: 0.06%
+Dress: 0.06%
+--------------------------------------------------
+
+Image: 46005.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 88.88%
+Trouser: 10.92%
+Pullover: 0.13%
+T-shirt/top: 0.05%
+Shirt: 0.01%
+Coat: 0.01%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 19927.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 85.45%
+Ankle boot: 14.35%
+Sneaker: 0.19%
+T-shirt/top: 0.01%
+Trouser: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 49657.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 89.46%
+Trouser: 8.09%
+Shirt: 1.49%
+Sandal: 0.40%
+Coat: 0.34%
+T-shirt/top: 0.22%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 12036.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 54.94%
+Shirt: 40.32%
+T-shirt/top: 2.13%
+Coat: 1.48%
+Trouser: 0.87%
+Sandal: 0.18%
+Sneaker: 0.06%
+Bag: 0.01%
+Ankle boot: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 33488.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 47.37%
+Coat: 20.20%
+T-shirt/top: 19.82%
+Shirt: 11.53%
+Trouser: 0.88%
+Sandal: 0.14%
+Bag: 0.02%
+Dress: 0.02%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 21878.jpg
+Predicted class: Sneaker
+Probabilities:
+Sneaker: 54.63%
+Trouser: 30.14%
+Sandal: 9.50%
+Ankle boot: 5.62%
+Shirt: 0.04%
+T-shirt/top: 0.04%
+Pullover: 0.01%
+Dress: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 48102.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 82.27%
+Trouser: 17.31%
+Coat: 0.22%
+T-shirt/top: 0.10%
+Shirt: 0.07%
+Pullover: 0.03%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 31784.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 39.03%
+Pullover: 32.53%
+Shirt: 13.15%
+Trouser: 8.93%
+Coat: 4.77%
+T-shirt/top: 1.59%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 12471.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 88.17%
+Shirt: 11.05%
+T-shirt/top: 0.40%
+Coat: 0.37%
+Sneaker: 0.01%
+Trouser: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 27882.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 96.71%
+Trouser: 2.42%
+T-shirt/top: 0.60%
+Ankle boot: 0.12%
+Shirt: 0.10%
+Sneaker: 0.02%
+Pullover: 0.02%
+Coat: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 39589.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 36.09%
+Shirt: 29.69%
+Coat: 10.96%
+T-shirt/top: 10.33%
+Trouser: 10.07%
+Sandal: 1.65%
+Sneaker: 0.51%
+Ankle boot: 0.36%
+Bag: 0.17%
+Dress: 0.17%
+--------------------------------------------------
+
+Image: 28017.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 74.22%
+Trouser: 25.19%
+T-shirt/top: 0.58%
+Coat: 0.01%
+Pullover: 0.01%
+Dress: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 7949.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 80.81%
+Sandal: 19.08%
+Pullover: 0.03%
+Shirt: 0.02%
+Sneaker: 0.02%
+T-shirt/top: 0.02%
+Ankle boot: 0.01%
+Coat: 0.01%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 17963.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 75.09%
+Sandal: 10.51%
+Shirt: 6.33%
+Pullover: 4.77%
+Trouser: 2.17%
+Ankle boot: 0.55%
+Coat: 0.47%
+Bag: 0.06%
+Sneaker: 0.02%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 28950.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 73.03%
+Sandal: 26.47%
+T-shirt/top: 0.29%
+Pullover: 0.18%
+Shirt: 0.03%
+Coat: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 27110.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 98.25%
+Shirt: 1.52%
+T-shirt/top: 0.12%
+Coat: 0.11%
+Trouser: 0.00%
+Sandal: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 54521.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 41.85%
+Shirt: 22.04%
+Sneaker: 9.72%
+T-shirt/top: 7.73%
+Trouser: 5.33%
+Coat: 4.38%
+Ankle boot: 4.07%
+Sandal: 3.58%
+Bag: 0.76%
+Dress: 0.54%
+--------------------------------------------------
+
+Image: 9733.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 74.82%
+T-shirt/top: 12.28%
+Shirt: 7.60%
+Pullover: 2.89%
+Sandal: 1.93%
+Coat: 0.12%
+Sneaker: 0.12%
+Dress: 0.10%
+Bag: 0.10%
+Ankle boot: 0.05%
+--------------------------------------------------
+
+Image: 6477.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 72.40%
+Shirt: 24.81%
+T-shirt/top: 2.33%
+Coat: 0.41%
+Sneaker: 0.03%
+Trouser: 0.01%
+Sandal: 0.01%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 22356.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 94.59%
+Shirt: 4.36%
+Coat: 0.97%
+T-shirt/top: 0.08%
+Trouser: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 15191.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 57.73%
+Pullover: 27.23%
+Shirt: 6.55%
+T-shirt/top: 4.78%
+Coat: 2.24%
+Sandal: 1.19%
+Sneaker: 0.21%
+Ankle boot: 0.04%
+Bag: 0.03%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 26796.jpg
+Predicted class: Sneaker
+Probabilities:
+Sneaker: 49.33%
+Trouser: 43.19%
+Dress: 2.09%
+Sandal: 1.15%
+Bag: 1.04%
+Shirt: 0.97%
+T-shirt/top: 0.77%
+Pullover: 0.73%
+Coat: 0.60%
+Ankle boot: 0.13%
+--------------------------------------------------
+
+Image: 28129.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.30%
+Trouser: 0.64%
+T-shirt/top: 0.05%
+Pullover: 0.01%
+Dress: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 56525.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 63.23%
+Shirt: 33.92%
+T-shirt/top: 2.79%
+Pullover: 0.05%
+Trouser: 0.01%
+Sandal: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 51394.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.83%
+T-shirt/top: 0.17%
+Coat: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Shirt: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 10180.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 73.01%
+Pullover: 16.83%
+Shirt: 4.94%
+Coat: 4.05%
+Trouser: 0.89%
+Sandal: 0.14%
+Bag: 0.12%
+Ankle boot: 0.01%
+Dress: 0.01%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 46827.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 88.37%
+Trouser: 5.76%
+Ankle boot: 4.64%
+T-shirt/top: 0.64%
+Sneaker: 0.22%
+Pullover: 0.21%
+Shirt: 0.13%
+Coat: 0.02%
+Dress: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 59481.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 37.10%
+Shirt: 34.87%
+Coat: 20.13%
+T-shirt/top: 5.79%
+Trouser: 1.96%
+Sandal: 0.04%
+Bag: 0.04%
+Sneaker: 0.03%
+Dress: 0.02%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 16767.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 99.27%
+Shirt: 0.69%
+Trouser: 0.02%
+Sandal: 0.01%
+Bag: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 59885.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 76.88%
+Trouser: 21.09%
+Pullover: 0.82%
+Shirt: 0.77%
+T-shirt/top: 0.36%
+Coat: 0.07%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 38379.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 80.02%
+Shirt: 7.85%
+Trouser: 6.22%
+Pullover: 5.13%
+Coat: 0.53%
+Bag: 0.16%
+Sandal: 0.04%
+Ankle boot: 0.03%
+Dress: 0.01%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 49826.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 45.20%
+Shirt: 19.93%
+Trouser: 15.06%
+Pullover: 14.84%
+Coat: 4.37%
+Sandal: 0.23%
+Bag: 0.22%
+Ankle boot: 0.10%
+Sneaker: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 56634.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 82.62%
+Pullover: 8.14%
+Shirt: 3.73%
+Coat: 2.80%
+Sandal: 1.45%
+Trouser: 1.24%
+Bag: 0.02%
+Sneaker: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 3359.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 54.73%
+Ankle boot: 32.64%
+Sandal: 4.72%
+Sneaker: 3.16%
+Dress: 2.81%
+T-shirt/top: 1.01%
+Shirt: 0.90%
+Pullover: 0.03%
+Bag: 0.01%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 43592.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 46.15%
+T-shirt/top: 23.38%
+Coat: 16.27%
+Shirt: 12.79%
+Trouser: 1.03%
+Sandal: 0.31%
+Bag: 0.03%
+Dress: 0.02%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 19000.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 91.59%
+Shirt: 6.61%
+Coat: 1.29%
+T-shirt/top: 0.42%
+Trouser: 0.07%
+Sneaker: 0.01%
+Bag: 0.00%
+Ankle boot: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 56161.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 31.76%
+Trouser: 25.94%
+Coat: 24.93%
+Shirt: 10.80%
+T-shirt/top: 5.79%
+Bag: 0.43%
+Sneaker: 0.19%
+Sandal: 0.11%
+Ankle boot: 0.03%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 41172.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 96.96%
+Trouser: 2.91%
+Pullover: 0.12%
+Sneaker: 0.01%
+Coat: 0.01%
+Shirt: 0.00%
+T-shirt/top: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 42084.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 85.86%
+Sandal: 9.05%
+Coat: 3.11%
+Trouser: 1.57%
+Shirt: 0.21%
+Pullover: 0.19%
+Bag: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 44516.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 90.08%
+Shirt: 3.60%
+Coat: 2.22%
+Pullover: 2.03%
+Trouser: 1.93%
+Sandal: 0.13%
+Bag: 0.02%
+Ankle boot: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 7449.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 72.97%
+Shirt: 15.77%
+T-shirt/top: 7.68%
+Coat: 2.24%
+Trouser: 0.70%
+Bag: 0.30%
+Sneaker: 0.22%
+Ankle boot: 0.06%
+Dress: 0.03%
+Sandal: 0.03%
+--------------------------------------------------
+
+Image: 47335.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 97.03%
+Shirt: 2.96%
+Trouser: 0.01%
+Pullover: 0.00%
+Bag: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+Ankle boot: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 38004.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.90%
+T-shirt/top: 0.06%
+Trouser: 0.03%
+Ankle boot: 0.01%
+Shirt: 0.00%
+Sneaker: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 31463.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+T-shirt/top: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 29247.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 88.20%
+Shirt: 10.23%
+Coat: 0.95%
+T-shirt/top: 0.60%
+Trouser: 0.01%
+Sneaker: 0.01%
+Sandal: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 47543.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 43.39%
+Coat: 21.55%
+T-shirt/top: 19.54%
+Shirt: 12.99%
+Trouser: 2.26%
+Sandal: 0.15%
+Bag: 0.08%
+Sneaker: 0.01%
+Ankle boot: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 57321.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 63.18%
+Shirt: 36.68%
+Pullover: 0.13%
+Bag: 0.01%
+Coat: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Sandal: 0.00%
+--------------------------------------------------
+
+Image: 24566.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 80.33%
+Trouser: 10.88%
+Shirt: 6.52%
+Coat: 1.55%
+T-shirt/top: 0.54%
+Sandal: 0.15%
+Sneaker: 0.03%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 8904.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 99.62%
+Coat: 0.20%
+T-shirt/top: 0.14%
+Pullover: 0.04%
+Dress: 0.00%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Trouser: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 23959.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 51.13%
+T-shirt/top: 21.41%
+Pullover: 12.18%
+Shirt: 9.80%
+Sneaker: 2.48%
+Coat: 2.14%
+Ankle boot: 0.60%
+Sandal: 0.21%
+Bag: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 24627.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 52.88%
+Ankle boot: 27.96%
+Shirt: 4.66%
+Trouser: 4.53%
+Pullover: 4.16%
+T-shirt/top: 3.85%
+Sneaker: 1.59%
+Coat: 0.26%
+Dress: 0.10%
+Bag: 0.01%
+--------------------------------------------------
+
+Image: 46939.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 42.50%
+Coat: 23.57%
+Shirt: 21.61%
+Trouser: 6.47%
+T-shirt/top: 5.39%
+Bag: 0.17%
+Sneaker: 0.13%
+Sandal: 0.08%
+Dress: 0.04%
+Ankle boot: 0.04%
+--------------------------------------------------
+
+Image: 33235.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 80.28%
+Shirt: 10.45%
+Coat: 4.43%
+T-shirt/top: 3.44%
+Trouser: 0.98%
+Sneaker: 0.37%
+Bag: 0.03%
+Ankle boot: 0.01%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 20302.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 80.68%
+Ankle boot: 17.81%
+Sneaker: 1.45%
+T-shirt/top: 0.03%
+Trouser: 0.03%
+Shirt: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 59878.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 46169.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 93.56%
+Pullover: 4.28%
+Coat: 0.72%
+Sandal: 0.50%
+Ankle boot: 0.26%
+Shirt: 0.25%
+T-shirt/top: 0.22%
+Sneaker: 0.11%
+Bag: 0.06%
+Dress: 0.05%
+--------------------------------------------------
+
+Image: 51539.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.83%
+Trouser: 0.60%
+T-shirt/top: 0.51%
+Coat: 0.04%
+Pullover: 0.01%
+Shirt: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 36948.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 92.82%
+Ankle boot: 7.13%
+Sneaker: 0.04%
+T-shirt/top: 0.01%
+Trouser: 0.01%
+Shirt: 0.00%
+Pullover: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 50216.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 98.44%
+Shirt: 0.85%
+Pullover: 0.44%
+Trouser: 0.21%
+Sandal: 0.03%
+Coat: 0.02%
+Bag: 0.01%
+Dress: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 39225.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 68.34%
+T-shirt/top: 27.69%
+Coat: 3.01%
+Shirt: 0.78%
+Bag: 0.08%
+Trouser: 0.05%
+Pullover: 0.04%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 3917.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 90.63%
+T-shirt/top: 9.06%
+Pullover: 0.14%
+Coat: 0.13%
+Sandal: 0.03%
+Bag: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+Ankle boot: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 28319.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 95.31%
+Shirt: 1.87%
+Trouser: 1.40%
+Pullover: 0.78%
+Sandal: 0.54%
+Coat: 0.07%
+Ankle boot: 0.02%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 37241.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 98.84%
+Ankle boot: 0.68%
+T-shirt/top: 0.26%
+Trouser: 0.21%
+Shirt: 0.01%
+Pullover: 0.00%
+Sneaker: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 7151.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.95%
+Sneaker: 0.04%
+Ankle boot: 0.01%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Trouser: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 53093.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 35.75%
+Pullover: 33.70%
+Coat: 18.69%
+T-shirt/top: 8.41%
+Trouser: 3.00%
+Bag: 0.16%
+Sneaker: 0.12%
+Sandal: 0.09%
+Ankle boot: 0.04%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 18547.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 65.39%
+Trouser: 15.68%
+T-shirt/top: 13.86%
+Pullover: 2.91%
+Shirt: 0.95%
+Coat: 0.72%
+Ankle boot: 0.41%
+Sneaker: 0.06%
+Bag: 0.02%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 26727.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 93.77%
+T-shirt/top: 2.33%
+Pullover: 1.71%
+Sandal: 1.40%
+Shirt: 0.64%
+Sneaker: 0.07%
+Ankle boot: 0.05%
+Coat: 0.02%
+Bag: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 46793.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 66.31%
+Shirt: 15.38%
+Coat: 10.34%
+T-shirt/top: 7.31%
+Trouser: 0.48%
+Bag: 0.09%
+Sneaker: 0.05%
+Dress: 0.02%
+Sandal: 0.01%
+Ankle boot: 0.01%
+--------------------------------------------------
+
+Image: 41878.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 41.61%
+Pullover: 23.58%
+Shirt: 16.17%
+Coat: 12.86%
+Trouser: 5.35%
+Bag: 0.19%
+Sandal: 0.17%
+Ankle boot: 0.04%
+Sneaker: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 53677.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 48.56%
+Shirt: 29.09%
+Trouser: 15.38%
+Pullover: 4.45%
+Bag: 1.45%
+Coat: 0.40%
+Ankle boot: 0.25%
+Dress: 0.20%
+Sneaker: 0.15%
+Sandal: 0.08%
+--------------------------------------------------
+
+Image: 24175.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 95.90%
+Shirt: 1.79%
+Trouser: 1.52%
+Coat: 0.50%
+T-shirt/top: 0.27%
+Sandal: 0.02%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 37497.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.57%
+Ankle boot: 0.19%
+T-shirt/top: 0.08%
+Trouser: 0.07%
+Sneaker: 0.04%
+Shirt: 0.04%
+Pullover: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 31933.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 58.68%
+Trouser: 32.08%
+Shirt: 6.83%
+Bag: 1.94%
+Pullover: 0.35%
+Sandal: 0.07%
+Ankle boot: 0.02%
+Dress: 0.01%
+Coat: 0.01%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 11047.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 93.08%
+Shirt: 4.41%
+Coat: 1.96%
+T-shirt/top: 0.46%
+Trouser: 0.07%
+Sneaker: 0.01%
+Sandal: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 52049.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 85.25%
+Shirt: 11.03%
+Coat: 2.49%
+T-shirt/top: 1.10%
+Trouser: 0.09%
+Sneaker: 0.03%
+Bag: 0.01%
+Ankle boot: 0.00%
+Sandal: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 39486.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 58.39%
+T-shirt/top: 31.98%
+Ankle boot: 9.63%
+Sneaker: 0.00%
+Shirt: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+--------------------------------------------------
+
+Image: 3717.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 57.95%
+Sandal: 11.61%
+Pullover: 10.89%
+T-shirt/top: 9.96%
+Shirt: 9.16%
+Sneaker: 0.29%
+Coat: 0.09%
+Bag: 0.06%
+Ankle boot: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 19023.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 37.47%
+Shirt: 26.00%
+T-shirt/top: 17.19%
+Coat: 13.18%
+Trouser: 5.40%
+Sandal: 0.24%
+Bag: 0.22%
+Sneaker: 0.14%
+Ankle boot: 0.11%
+Dress: 0.05%
+--------------------------------------------------
+
+Image: 16948.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 31.64%
+Coat: 25.39%
+Trouser: 15.76%
+Shirt: 13.51%
+Pullover: 13.22%
+Bag: 0.24%
+Sandal: 0.19%
+Sneaker: 0.02%
+Ankle boot: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 45148.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 49.59%
+Shirt: 31.39%
+Coat: 11.31%
+Pullover: 5.76%
+Trouser: 1.00%
+Sandal: 0.89%
+Bag: 0.05%
+Dress: 0.01%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 27689.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 96.36%
+Sandal: 1.61%
+Shirt: 1.26%
+Trouser: 0.72%
+Pullover: 0.03%
+Bag: 0.01%
+Ankle boot: 0.01%
+Dress: 0.00%
+Coat: 0.00%
+Sneaker: 0.00%
+--------------------------------------------------
+
+Image: 24482.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 54.70%
+Trouser: 22.68%
+Sandal: 20.71%
+Shirt: 1.34%
+Pullover: 0.38%
+Ankle boot: 0.14%
+Coat: 0.04%
+Dress: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 10395.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 99.85%
+Sneaker: 0.11%
+Sandal: 0.05%
+Trouser: 0.00%
+Dress: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 47559.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 55.35%
+Trouser: 21.79%
+Coat: 9.35%
+Shirt: 6.70%
+Pullover: 6.62%
+Sandal: 0.11%
+Bag: 0.06%
+Ankle boot: 0.01%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 23826.jpg
+Predicted class: Ankle boot
+Probabilities:
+Ankle boot: 99.93%
+Sandal: 0.07%
+Sneaker: 0.00%
+Dress: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+T-shirt/top: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+Pullover: 0.00%
+--------------------------------------------------
+
+Image: 15268.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 46.32%
+Trouser: 23.59%
+Pullover: 11.83%
+Sandal: 9.24%
+Coat: 6.22%
+Shirt: 2.70%
+Bag: 0.03%
+Ankle boot: 0.03%
+Sneaker: 0.03%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 5486.jpg
+Predicted class: Coat
+Probabilities:
+Coat: 91.72%
+Pullover: 2.94%
+Trouser: 2.73%
+T-shirt/top: 1.77%
+Sandal: 0.82%
+Shirt: 0.02%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 3130.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 63.29%
+Pullover: 16.06%
+T-shirt/top: 15.72%
+Sneaker: 2.87%
+Ankle boot: 1.06%
+Trouser: 0.79%
+Coat: 0.11%
+Sandal: 0.04%
+Bag: 0.04%
+Dress: 0.02%
+--------------------------------------------------
+
+Image: 45084.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 46.08%
+Shirt: 22.89%
+T-shirt/top: 21.57%
+Sandal: 9.13%
+Coat: 0.27%
+Trouser: 0.03%
+Sneaker: 0.02%
+Bag: 0.01%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 10862.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 86.68%
+Shirt: 11.54%
+Coat: 1.03%
+T-shirt/top: 0.71%
+Trouser: 0.03%
+Sneaker: 0.01%
+Bag: 0.00%
+Sandal: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 31692.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 63.84%
+Ankle boot: 36.13%
+Sneaker: 0.03%
+Trouser: 0.00%
+T-shirt/top: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 15481.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.95%
+T-shirt/top: 0.05%
+Sneaker: 0.00%
+Shirt: 0.00%
+Bag: 0.00%
+Coat: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 45782.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 55.57%
+Pullover: 30.77%
+T-shirt/top: 11.19%
+Trouser: 0.99%
+Sneaker: 0.69%
+Coat: 0.27%
+Ankle boot: 0.26%
+Sandal: 0.25%
+Bag: 0.01%
+Dress: 0.01%
+--------------------------------------------------
+
+Image: 31028.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 75.03%
+Sandal: 8.97%
+T-shirt/top: 7.71%
+Pullover: 5.90%
+Shirt: 1.85%
+Coat: 0.43%
+Sneaker: 0.07%
+Ankle boot: 0.03%
+Bag: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 22149.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 69.99%
+T-shirt/top: 29.00%
+Trouser: 0.63%
+Pullover: 0.31%
+Coat: 0.06%
+Shirt: 0.01%
+Ankle boot: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 42518.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.35%
+Trouser: 0.19%
+T-shirt/top: 0.14%
+Coat: 0.14%
+Shirt: 0.11%
+Pullover: 0.08%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 5071.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 100.00%
+T-shirt/top: 0.00%
+Trouser: 0.00%
+Shirt: 0.00%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Pullover: 0.00%
+Coat: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 45214.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 89.01%
+Coat: 6.62%
+Pullover: 3.17%
+Shirt: 0.85%
+Sandal: 0.29%
+Trouser: 0.06%
+Bag: 0.00%
+Dress: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+--------------------------------------------------
+
+Image: 35846.jpg
+Predicted class: Shirt
+Probabilities:
+Shirt: 33.50%
+Pullover: 31.19%
+T-shirt/top: 21.10%
+Trouser: 6.65%
+Coat: 3.07%
+Ankle boot: 2.53%
+Sneaker: 1.04%
+Sandal: 0.38%
+Bag: 0.36%
+Dress: 0.19%
+--------------------------------------------------
+
+Image: 12189.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 55.05%
+Trouser: 44.12%
+T-shirt/top: 0.68%
+Shirt: 0.07%
+Pullover: 0.06%
+Coat: 0.02%
+Sneaker: 0.01%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 39729.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 88.39%
+Shirt: 10.13%
+T-shirt/top: 0.71%
+Pullover: 0.50%
+Trouser: 0.17%
+Coat: 0.09%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 33617.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 68.17%
+Trouser: 19.39%
+Shirt: 11.01%
+Pullover: 0.74%
+Bag: 0.56%
+Coat: 0.05%
+Sandal: 0.02%
+Dress: 0.02%
+Ankle boot: 0.01%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 39969.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 29.80%
+Shirt: 21.44%
+T-shirt/top: 15.57%
+Trouser: 13.22%
+Coat: 9.52%
+Sandal: 4.01%
+Sneaker: 3.22%
+Ankle boot: 2.07%
+Bag: 0.78%
+Dress: 0.37%
+--------------------------------------------------
+
+Image: 15276.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 39.83%
+Shirt: 34.10%
+Coat: 14.86%
+T-shirt/top: 9.27%
+Trouser: 1.60%
+Bag: 0.11%
+Sneaker: 0.09%
+Sandal: 0.06%
+Ankle boot: 0.04%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 20182.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 60.32%
+Pullover: 14.19%
+Trouser: 10.73%
+Shirt: 8.18%
+Coat: 5.10%
+Sandal: 1.43%
+Sneaker: 0.02%
+Ankle boot: 0.02%
+Bag: 0.01%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 26502.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 93.88%
+Sandal: 5.90%
+Pullover: 0.08%
+Coat: 0.05%
+Shirt: 0.04%
+Sneaker: 0.03%
+T-shirt/top: 0.02%
+Ankle boot: 0.00%
+Bag: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 2545.jpg
+Predicted class: T-shirt/top
+Probabilities:
+T-shirt/top: 45.80%
+Shirt: 22.99%
+Pullover: 18.49%
+Coat: 11.33%
+Trouser: 1.12%
+Bag: 0.14%
+Sandal: 0.07%
+Dress: 0.03%
+Ankle boot: 0.02%
+Sneaker: 0.01%
+--------------------------------------------------
+
+Image: 20868.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 40.63%
+Shirt: 20.67%
+Coat: 17.33%
+T-shirt/top: 15.40%
+Trouser: 4.99%
+Sandal: 0.38%
+Sneaker: 0.19%
+Ankle boot: 0.16%
+Bag: 0.14%
+Dress: 0.11%
+--------------------------------------------------
+
+Image: 6548.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 58.11%
+T-shirt/top: 20.64%
+Pullover: 11.17%
+Sandal: 3.80%
+Coat: 2.88%
+Shirt: 2.12%
+Ankle boot: 0.70%
+Bag: 0.32%
+Sneaker: 0.23%
+Dress: 0.04%
+--------------------------------------------------
+
+Image: 27473.jpg
+Predicted class: Pullover
+Probabilities:
+Pullover: 54.03%
+Shirt: 25.84%
+T-shirt/top: 9.61%
+Trouser: 4.85%
+Coat: 4.19%
+Bag: 0.51%
+Sneaker: 0.42%
+Ankle boot: 0.28%
+Dress: 0.21%
+Sandal: 0.06%
+--------------------------------------------------
+
+Image: 40503.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.99%
+T-shirt/top: 0.01%
+Shirt: 0.00%
+Coat: 0.00%
+Pullover: 0.00%
+Trouser: 0.00%
+Bag: 0.00%
+Sneaker: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 5160.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 83.64%
+Sandal: 9.90%
+Sneaker: 5.66%
+Ankle boot: 0.31%
+T-shirt/top: 0.17%
+Pullover: 0.15%
+Shirt: 0.13%
+Coat: 0.03%
+Dress: 0.01%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 12812.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 99.96%
+Ankle boot: 0.03%
+T-shirt/top: 0.01%
+Trouser: 0.00%
+Sneaker: 0.00%
+Pullover: 0.00%
+Shirt: 0.00%
+Dress: 0.00%
+Coat: 0.00%
+Bag: 0.00%
+--------------------------------------------------
+
+Image: 12610.jpg
+Predicted class: Sandal
+Probabilities:
+Sandal: 93.61%
+Pullover: 5.69%
+Trouser: 0.27%
+Shirt: 0.21%
+T-shirt/top: 0.15%
+Coat: 0.06%
+Sneaker: 0.00%
+Bag: 0.00%
+Ankle boot: 0.00%
+Dress: 0.00%
+--------------------------------------------------
+
+Image: 51418.jpg
+Predicted class: Trouser
+Probabilities:
+Trouser: 57.19%
+T-shirt/top: 30.43%
+Pullover: 5.48%
+Shirt: 4.23%
+Coat: 2.00%
+Sandal: 0.24%
+Ankle boot: 0.24%
+Sneaker: 0.16%
+Bag: 0.02%
+Dress: 0.00%
+--------------------------------------------------

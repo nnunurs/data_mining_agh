@@ -2,3 +2,5 @@
 *:Zone*
 __pycache__/
 .vscode/
+.env
+data/

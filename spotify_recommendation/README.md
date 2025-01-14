@@ -33,7 +33,7 @@ LASTFM_API_SECRET=your_api_secret
 
 ## Usage
 
-1. Place your Spotify listening history JSON files in the `data/` directory
+1. Place your Spotify listening history JSON files in the `data/` directory. Files have to be JSON files downloaded from Spotify, their names should look like `Streaming_History_Audio_{time period}.json`
 2. Run the recommender:
 ```bash
 python spotify_recommender.py
