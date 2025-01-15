@@ -11,6 +11,7 @@ from collections import defaultdict
 from tqdm import tqdm
 import pylast
 from dotenv import load_dotenv
+from typing import Dict, List
 
 class MusicRecommender:
     def __init__(self):
@@ -316,58 +317,239 @@ class MusicRecommender:
             
             print("Example artists:", ", ".join(stats['artists'][:3]))
     
-    def get_recommendations(self, top_n=5):
-        if not hasattr(self, 'artist_features') or not self.artist_features:
-            raise ValueError("Process data first using process_listening_history()")
+    def analyze_taste_patterns(self) -> Dict:
+        """
+        Analizuje wzorce gustów muzycznych i tworzy profile słuchacza
+        """
+        print("\nAnalyzing taste patterns...")
         
-        print("\nYour music preferences:")
-        if self.favorite_tags:
-            print("\nFavorite tags:")
-            for tag, weight in self.favorite_tags[:5]:
-                print(f"- {tag}")
+        patterns = {
+            'artist_clusters': {},  # Grupowanie artystów
+            'listening_personas': [],  # Profile słuchacza
+            'taste_vectors': {},  # Wektory preferencji
+            'discovery_paths': []  # Ścieżki odkrywania muzyki
+        }
         
-        if self.preferred_hours:
-            print("\nPreferred listening hours:")
-            peak_hours = sorted(self.preferred_hours.items(), key=lambda x: x[1], reverse=True)[:3]
-            for hour, percentage in peak_hours:
-                print(f"- {hour}:00 ({percentage*100:.1f}% of listening)")
+        # Przygotuj dane o słuchaniu
+        artist_features = defaultdict(lambda: {
+            'play_count': 0,
+            'total_time': 0,
+            'time_of_day': defaultdict(int),
+            'tags': set(),
+            'first_listen': None,
+            'last_listen': None,
+            'listening_gaps': []
+        })
         
-        candidates = set()
-        for artist, data in self.artist_features.items():
-            if 'similar_artists' in data:
-                candidates.update(data['similar_artists'])
+        # Zbierz dane o artystach
+        for _, row in tqdm(self.history_data.iterrows(), desc="Processing listening history"):
+            artist = row['master_metadata_album_artist_name']
+            timestamp = pd.to_datetime(row['ts'])
+            ms_played = row['ms_played']
+            
+            # Aktualizuj statystyki artysty
+            artist_features[artist]['play_count'] += 1
+            artist_features[artist]['total_time'] += ms_played
+            artist_features[artist]['time_of_day'][timestamp.hour] += 1
+            
+            # Śledź pierwszego i ostatniego odsłuchania
+            if artist_features[artist]['first_listen'] is None:
+                artist_features[artist]['first_listen'] = timestamp
+            else:
+                gap = (timestamp - artist_features[artist]['last_listen']).days
+                if gap > 0:
+                    artist_features[artist]['listening_gaps'].append(gap)
+            artist_features[artist]['last_listen'] = timestamp
+
+        # Utwórz klastry artystów
+        print("\nClustering artists...")
+        artist_vectors = []
+        artist_names = []
         
-        candidates = candidates - set(self.artist_features.keys())
+        for artist, features in artist_features.items():
+            if features['play_count'] >= 5:  # Minimum 5 odtworzeń
+                vector = [
+                    features['play_count'],
+                    features['total_time'] / (1000 * 60),  # minuty
+                    np.mean(features['listening_gaps']) if features['listening_gaps'] else 0,
+                    np.std(features['listening_gaps']) if features['listening_gaps'] else 0,
+                    *[features['time_of_day'][h] for h in range(24)]  # rozkład godzinowy
+                ]
+                artist_vectors.append(vector)
+                artist_names.append(artist)
         
-        if not candidates:
-            print("\nWarning: No recommendation candidates found")
-            return []
+        if artist_vectors:
+            # Normalizacja wektorów
+            scaler = StandardScaler()
+            artist_vectors_scaled = scaler.fit_transform(artist_vectors)
+            
+            # Klasteryzacja
+            n_clusters = min(len(artist_vectors) // 5, 10)  # Max 10 klastrów
+            if n_clusters > 1:
+                kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+                clusters = kmeans.fit_predict(artist_vectors_scaled)
+                
+                # Zapisz klastry
+                for artist, cluster in zip(artist_names, clusters):
+                    patterns['artist_clusters'][artist] = int(cluster)
+                
+                # Analizuj profile słuchacza (persony)
+                for cluster_id in range(n_clusters):
+                    cluster_artists = [artist for i, artist in enumerate(artist_names) 
+                                     if clusters[i] == cluster_id]
+                    
+                    # Zbierz cechy klastra
+                    cluster_features = {
+                        'artists': cluster_artists,
+                        'size': len(cluster_artists),
+                        'avg_plays': np.mean([artist_features[a]['play_count'] 
+                                            for a in cluster_artists]),
+                        'peak_hours': self._get_peak_hours([artist_features[a]['time_of_day'] 
+                                                          for a in cluster_artists]),
+                        'loyalty_score': np.mean([
+                            len(artist_features[a]['listening_gaps']) /
+                            (artist_features[a]['last_listen'] - 
+                             artist_features[a]['first_listen']).days
+                            for a in cluster_artists
+                            if (artist_features[a]['last_listen'] - 
+                                artist_features[a]['first_listen']).days > 0
+                        ])
+                    }
+                    
+                    patterns['listening_personas'].append(cluster_features)
         
-        print(f"\nFound {len(candidates)} potential artists for recommendations")
+        # Analiza ścieżek odkrywania
+        print("\nAnalyzing discovery paths...")
+        sorted_history = self.history_data.sort_values('ts')
+        discovery_window = pd.Timedelta(days=7)
+        current_path = []
+        
+        for _, row in sorted_history.iterrows():
+            artist = row['master_metadata_album_artist_name']
+            if not current_path:
+                current_path.append((artist, row['ts']))
+            else:
+                time_diff = row['ts'] - current_path[-1][1]
+                if time_diff <= discovery_window and artist not in [a for a, _ in current_path]:
+                    current_path.append((artist, row['ts']))
+                elif time_diff > discovery_window:
+                    if len(current_path) >= 3:  # Minimum 3 artystów w ścieżce
+                        patterns['discovery_paths'].append([a for a, _ in current_path])
+                    current_path = [(artist, row['ts'])]
+        
+        return patterns
+
+    def _get_peak_hours(self, time_distributions: List[Dict]) -> List[int]:
+        """Znajduje szczytowe godziny słuchania dla zbioru artystów"""
+        combined = defaultdict(int)
+        for dist in time_distributions:
+            for hour, count in dist.items():
+                combined[hour] += count
+        
+        # Zwróć top 3 godziny
+        return sorted(combined.items(), key=lambda x: x[1], reverse=True)[:3]
+
+    def get_recommendations(self, top_n: int = 10) -> List[Dict]:
+        """
+        Generuje rekomendacje bazując na analizie wzorców
+        """
+        # Najpierw analizujemy wzorce
+        patterns = self.analyze_taste_patterns()
         
         recommendations = []
-        for artist_name in tqdm(list(candidates)[:50], desc="Analyzing potential recommendations"):
-            features = self.get_artist_features(artist_name)
-            if features and features.get('tags'):
-                tag_similarity = len(features['tags'] & {tag for tag, _ in self.favorite_tags}) / len(self.favorite_tags) if self.favorite_tags else 0
-                popularity_score = np.log1p(features['global_listeners']) / 20
-                final_score = 0.7 * tag_similarity + 0.3 * popularity_score
-                
-                recommendations.append({
-                    'artist': artist_name,
-                    'tags': list(features['tags']),
-                    'listeners': features['global_listeners'],
-                    'tag_similarity': tag_similarity,
-                    'score': final_score
-                })
-            
-            time.sleep(0.25)
         
-        if not recommendations:
-            print("\nWarning: Could not find suitable recommendations")
-            return []
+        if not patterns['artist_clusters']:
+            return self._get_basic_recommendations(top_n)
         
-        return sorted(recommendations, key=lambda x: x['score'], reverse=True)[:top_n]
+        # Znajdź aktywny profil słuchacza
+        recent_artists = self.history_data.sort_values('ts').tail(50)[
+            'master_metadata_album_artist_name'].unique()
+        
+        active_clusters = [patterns['artist_clusters'][artist] 
+                          for artist in recent_artists 
+                          if artist in patterns['artist_clusters']]
+        
+        if not active_clusters:
+            return self._get_basic_recommendations(top_n)
+        
+        # Użyj najczęstszego klastra jako aktywnego profilu
+        active_cluster = max(set(active_clusters), key=active_clusters.count)
+        active_persona = patterns['listening_personas'][active_cluster]
+        
+        # Generuj rekomendacje bazując na aktywnym profilu
+        for artist in active_persona['artists']:
+            try:
+                similar_artists = self.network.get_artist(artist).get_similar()
+                for similar, match in similar_artists:
+                    if str(similar) not in recent_artists:
+                        recommendations.append({
+                            'artist': str(similar),
+                            'score': float(match) * active_persona['loyalty_score'],
+                            'source': artist,
+                            'cluster': active_cluster
+                        })
+            except Exception:
+                continue
+        
+        # Sortuj i zwróć top_n rekomendacji
+        recommendations = sorted(recommendations, key=lambda x: x['score'], reverse=True)
+        return recommendations[:top_n]
+
+    def _get_basic_recommendations(self, top_n: int = 10) -> List[Dict]:
+        """Podstawowe rekomendacje gdy brak wystarczających danych do analizy wzorców"""
+        # ... (poprzedni kod rekomendacji)
+
+    def _analyze_discovery_paths(self, sorted_history: pd.DataFrame, window_days: int = 7) -> List[List[str]]:
+        """
+        Analizuje ścieżki odkrywania nowych artystów w bardziej wydajny sposób.
+        
+        Args:
+            sorted_history: Posortowana historia słuchania
+            window_days: Okno czasowe w dniach dla jednej ścieżki odkrywania
+        """
+        print("\nAnalyzing discovery paths...")
+        discovery_paths = []
+        
+        # Grupuj po dniach dla szybszej analizy
+        daily_artists = sorted_history.groupby(sorted_history['ts'].dt.date).agg({
+            'master_metadata_album_artist_name': lambda x: list(dict.fromkeys(x))  # zachowuje kolejność
+        })
+        
+        window_size = pd.Timedelta(days=window_days)
+        current_path = []
+        current_artists = set()
+        start_date = None
+        
+        for date, artists in tqdm(daily_artists.iterrows(), 
+                                desc="Analyzing artist discovery patterns",
+                                total=len(daily_artists)):
+            if not current_path:
+                start_date = date
+                current_path.extend(artists['master_metadata_album_artist_name'])
+                current_artists.update(current_path)
+            else:
+                if (date - start_date) <= window_size:
+                    # Dodaj tylko nowych artystów z tego dnia
+                    new_artists = [a for a in artists['master_metadata_album_artist_name'] 
+                                 if a not in current_artists]
+                    if new_artists:
+                        current_path.extend(new_artists)
+                        current_artists.update(new_artists)
+                else:
+                    # Zapisz ścieżkę jeśli jest wystarczająco długa
+                    if len(current_path) >= 3:
+                        discovery_paths.append(current_path)
+                    # Zacznij nową ścieżkę
+                    current_path = artists['master_metadata_album_artist_name']
+                    current_artists = set(current_path)
+                    start_date = date
+        
+        # Dodaj ostatnią ścieżkę jeśli spełnia kryteria
+        if len(current_path) >= 3:
+            discovery_paths.append(current_path)
+        
+        print(f"Found {len(discovery_paths)} discovery paths")
+        return discovery_paths
 
 if __name__ == "__main__":
     recommender = MusicRecommender()
