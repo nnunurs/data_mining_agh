@@ -112,40 +112,109 @@ class MusicRecommender:
             return None
     
     def process_listening_history(self):
-        if self.history_data is None:
-            raise ValueError("No data loaded. Call load_streaming_history() first")
+        """Przetwarza historię słuchania i zbiera informacje o artystach"""
+        if self.history_data is None or self.network is None:
+            raise ValueError("Load history data and setup Last.fm client first")
+
+        print("\nProcessing listening history...")
         
-        self.history_data['ts'] = pd.to_datetime(self.history_data['ts'])
+        # Wczytaj cache gatunków jeśli istnieje
+        cache_file = Path('data/artist_cache.json')
+        cache_file.parent.mkdir(exist_ok=True)
         
-        print("Analyzing listening history...")
-        for _, row in tqdm(self.history_data.iterrows(), total=len(self.history_data), desc="Collecting basic statistics"):
-            artist = row['master_metadata_album_artist_name']
-            track = row['master_metadata_track_name']
-            hour = row['ts'].hour
+        artist_cache = {}
+        if cache_file.exists():
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    artist_cache = json.load(f)
+                print(f"Loaded {len(artist_cache)} artists from cache")
+            except Exception as e:
+                print(f"Error loading cache: {e}")
+
+        # Zbierz podstawowe statystyki
+        for _, row in tqdm(self.history_data.iterrows(), desc="Processing plays"):
+            artist_name = row['master_metadata_album_artist_name']
+            track_name = row['master_metadata_track_name']
             ms_played = row['ms_played']
+            hour = pd.to_datetime(row['ts']).hour
             
-            if ms_played < 30000:
-                continue
-                
-            self.artist_features[artist]['play_count'] += 1
-            self.artist_features[artist]['total_ms'] += ms_played
-            self.artist_features[artist]['unique_tracks'].add(track)
-            self.artist_features[artist]['listening_hours'][hour] += ms_played / 3600000
+            self.artist_features[artist_name]['play_count'] += 1
+            self.artist_features[artist_name]['total_ms'] += ms_played
+            self.artist_features[artist_name]['unique_tracks'].add(track_name)
+            self.artist_features[artist_name]['listening_hours'][hour] += ms_played / (1000 * 60 * 60)
+
+        # Znajdź artystów, których nie ma w cache
+        uncached_artists = [artist for artist in self.artist_features.keys() 
+                           if artist not in artist_cache]
         
-        top_artists = sorted(
-            self.artist_features.items(),
-            key=lambda x: x[1]['play_count'],
-            reverse=True
-        )[:100]
+        if uncached_artists:
+            print(f"\nFetching data for {len(uncached_artists)} new artists...")
+            
+            for artist_name in tqdm(uncached_artists, desc="Fetching artist data"):
+                try:
+                    artist = self.network.get_artist(artist_name)
+                    
+                    # Pobierz tagi
+                    tags = self._retry_api_call(artist.get_top_tags)
+                    if tags:
+                        artist_tags = [tag.item.name.lower() for tag in tags[:10]]
+                    else:
+                        artist_tags = []
+                    
+                    # Pobierz liczbę słuchaczy
+                    listeners = self._retry_api_call(artist.get_listener_count)
+                    
+                    # Zapisz do cache'u
+                    artist_cache[artist_name] = {
+                        'tags': artist_tags,
+                        'listeners': listeners if listeners else 0
+                    }
+                    
+                    # Aktualizuj features
+                    self.artist_features[artist_name]['tags'].update(artist_tags)
+                    self.artist_features[artist_name]['global_listeners'] = listeners if listeners else 0
+                    
+                except Exception as e:
+                    print(f"Error processing {artist_name}: {e}")
+                    continue
+            
+            # Zapisz zaktualizowany cache
+            try:
+                with open(cache_file, 'w', encoding='utf-8') as f:
+                    json.dump(artist_cache, f, ensure_ascii=False, indent=2)
+                print(f"Updated cache with {len(artist_cache)} artists")
+            except Exception as e:
+                print(f"Error saving cache: {e}")
+        else:
+            # Użyj danych z cache'u
+            print("\nUsing cached artist data...")
+            for artist_name, cache_data in artist_cache.items():
+                if artist_name in self.artist_features:
+                    self.artist_features[artist_name]['tags'].update(cache_data['tags'])
+                    self.artist_features[artist_name]['global_listeners'] = cache_data['listeners']
+
+        # Zbierz wszystkie unikalne tagi
+        all_tags = set()
+        for features in self.artist_features.values():
+            all_tags.update(features['tags'])
         
-        print("\nFetching artist information from Last.fm...")
-        for artist_name, data in tqdm(top_artists, desc="Fetching API data"):
-            features = self.get_artist_features(artist_name)
-            if features:
-                data.update(features)
-            time.sleep(0.25)
+        # Znajdź najczęstsze tagi
+        tag_counts = defaultdict(int)
+        for features in self.artist_features.values():
+            for tag in features['tags']:
+                tag_counts[tag] += features['play_count']
         
-        self._analyze_listening_patterns()
+        self.favorite_tags = sorted(tag_counts.items(), key=lambda x: x[1], reverse=True)
+
+        # Oblicz preferowane godziny słuchania
+        hour_counts = defaultdict(float)
+        for features in self.artist_features.values():
+            for hour, duration in features['listening_hours'].items():
+                hour_counts[hour] += duration
+        
+        self.preferred_hours = sorted(hour_counts.items(), key=lambda x: x[1], reverse=True)
+
+        # Wykonaj klasteryzację artystów
         self._cluster_artists()
     
     def _analyze_listening_patterns(self):
