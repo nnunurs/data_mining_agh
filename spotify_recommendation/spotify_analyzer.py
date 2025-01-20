@@ -189,22 +189,135 @@ class SpotifyAnalyzer:
                     'global_popularity': cache_data['popularity']
                 })
 
+    def analyze_artists(self) -> Dict:
+        """Analizuje statystyki artystów"""
+        print("\nAnalyzing artist statistics...")
+        
+        analysis = {
+            'top_artists': [],
+            'artist_clusters': self._cluster_artists(),
+            'listening_moods': self._analyze_listening_moods(),
+            'artist_relationships': self._analyze_artist_relationships(),
+            'listening_habits': {
+                'favorite_artists': [],
+                'discovery_rate': [],
+                'repeat_patterns': defaultdict(int),
+                'listening_streaks': []
+            }
+        }
+        
+        # Analiza top artystów
+        top_artists = sorted(
+            self.artist_features.items(),
+            key=lambda x: x[1]['play_count'],
+            reverse=True
+        )[:50]
+        
+        for artist, data in top_artists:
+            analysis['top_artists'].append({
+                'name': artist,
+                'play_count': data['play_count'],
+                'total_time': data['total_ms'] / (1000 * 60 * 60),  # w godzinach
+                'unique_tracks': len(data['unique_tracks']),
+                'genres': list(data['genres']),
+                'popularity': data['global_popularity']
+            })
+        
+        # Analiza ulubionych artystów w czasie
+        monthly_top = self.history_data.groupby([
+            pd.Grouper(key='ts', freq='M'),
+            'master_metadata_album_artist_name'
+        ]).size().reset_index(name='plays')
+        
+        for month, month_data in monthly_top.groupby(pd.Grouper(key='ts', freq='M')):
+            if not month_data.empty:
+                top_month_artists = month_data.nlargest(5, 'plays')
+                analysis['listening_habits']['favorite_artists'].append({
+                    'month': month.strftime('%Y-%m'),
+                    'artists': [{
+                        'name': row['master_metadata_album_artist_name'],
+                        'plays': row['plays']
+                    } for _, row in top_month_artists.iterrows()]
+                })
+        
+        # Analiza odkrywania nowych artystów
+        known_artists = set()
+        monthly_discovery = self.history_data.groupby(pd.Grouper(key='ts', freq='M'))
+        
+        for month, group in monthly_discovery:
+            month_artists = set(group['master_metadata_album_artist_name'])
+            new_artists = month_artists - known_artists
+            known_artists.update(new_artists)
+            
+            analysis['listening_habits']['discovery_rate'].append({
+                'month': month.strftime('%Y-%m'),
+                'new_artists': len(new_artists),
+                'total_artists': len(month_artists),
+                'discovery_rate': len(new_artists) / len(month_artists) if month_artists else 0
+            })
+        
+        # Analiza powtórzeń
+        for artist, features in self.artist_features.items():
+            analysis['listening_habits']['repeat_patterns'][features['play_count']] += 1
+        
+        # Analiza "streaks" słuchania
+        current_streak = []
+        prev_date = None
+        
+        for date in sorted(self.history_data['ts'].dt.date.unique()):
+            if prev_date is None or (date - prev_date).days == 1:
+                current_streak.append(date)
+            else:
+                if len(current_streak) >= 3:
+                    analysis['listening_habits']['listening_streaks'].append({
+                        'start': current_streak[0].isoformat(),
+                        'end': current_streak[-1].isoformat(),
+                        'length': len(current_streak)
+                    })
+                current_streak = [date]
+            prev_date = date
+        
+        return analysis
+
     def analyze_all(self) -> Dict:
-        """Przeprowadza wszystkie analizy i zwraca kompleksowy raport"""
-        print("\nStarting comprehensive music analysis...")
+        """Przeprowadza pełną analizę danych"""
+        try:
+            if self.history_data is None or self.history_data.empty:
+                print("No data to analyze")
+                return {
+                    'status': 'error',
+                    'message': 'No data available for analysis',
+                    'data': None
+                }
+
+            print("Starting comprehensive analysis...")
         
         # Najpierw przetwórz dane artystów
         self.process_artist_data()
         
         analysis = {
+                'status': 'success',
+                'data': {
+                    'basic_stats': self.get_basic_stats(),
             'temporal': self.analyze_temporal_patterns(),
-            'genres': self.analyze_genre_patterns(),
-            'listening': self.analyze_listening_patterns(),
-            'discovery': self.analyze_discovery_paths(),
-            'recommendations': self.get_recommendations()
-        }
-        
+                    'listening_patterns': self.analyze_listening_patterns(),
+                    'artist_analysis': self.analyze_artists(),
+                    'genre_analysis': self.analyze_genre_patterns(),
+                    'discovery_paths': self.analyze_discovery_paths(),
+                    'recommendations': self.generate_recommendations()
+                }
+            }
+            
+            print("Analysis completed successfully")
         return analysis
+            
+        except Exception as e:
+            print(f"Error during analysis: {str(e)}")
+            return {
+                'status': 'error',
+                'message': str(e),
+                'data': None
+            }
 
     def analyze_temporal_patterns(self) -> Dict:
         """Analizuje wzorce czasowe słuchania muzyki"""
@@ -350,75 +463,94 @@ class SpotifyAnalyzer:
         return patterns 
 
     def analyze_listening_patterns(self) -> Dict:
-        """Analizuje szczegółowe wzorce słuchania"""
-        print("\nAnalyzing listening patterns...")
-        
-        patterns = {
-            'artist_clusters': self._cluster_artists(),
-            'listening_moods': self._analyze_listening_moods(),
-            'artist_relationships': self._analyze_artist_relationships(),
-            'listening_habits': {
-                'favorite_artists': [],
-                'discovery_rate': [],
-                'repeat_patterns': defaultdict(int),
-                'listening_streaks': []
+        """Analizuje wzorce słuchania w czasie"""
+        if self.history_data.empty:
+            return {
+                'monthly_stats': [],
+                'daily_patterns': {},
+                'streak_stats': {
+                    'current_streak': 0,
+                    'longest_streak': 0,
+                    'total_active_days': 0
+                }
             }
-        }
+
+        # Konwertuj kolumnę czasu na datetime jeśli jeszcze nie jest
+        self.history_data['ts'] = pd.to_datetime(self.history_data['ts'])
         
-        # Analiza ulubionych artystów w czasie
-        monthly_top = self.history_data.groupby([
-            pd.Grouper(key='ts', freq='M'),
-            'master_metadata_album_artist_name'
-        ]).size().reset_index(name='plays')
+        # Grupuj po miesiącach
+        monthly_data = []
+        for month, month_data in self.history_data.groupby(pd.Grouper(key='ts', freq='M')):
+            if not month_data.empty:
+                monthly_stats = {
+                    'month': month.strftime('%Y-%m'),
+                    'total_plays': len(month_data),
+                    'unique_artists': month_data['master_metadata_album_artist_name'].nunique(),
+                    'total_time': month_data['ms_played'].sum() / (1000 * 60 * 60),  # w godzinach
+                    'avg_track_length': month_data['ms_played'].mean() / 1000  # w sekundach
+                }
+                monthly_data.append(monthly_stats)
         
-        for _, month_data in monthly_top.groupby(pd.Grouper(key='ts', freq='M')):
-            top_artists = month_data.nlargest(5, 'plays')
-            patterns['listening_habits']['favorite_artists'].append({
-                'month': month_data['ts'].iloc[0].strftime('%Y-%m'),
-                'artists': [{
-                    'name': row['master_metadata_album_artist_name'],
-                    'plays': row['plays']
-                } for _, row in top_artists.iterrows()]
-            })
+        # Analiza dziennych wzorców
+        daily_patterns = {}
         
-        # Analiza odkrywania nowych artystów
-        known_artists = set()
-        monthly_discovery = self.history_data.groupby(pd.Grouper(key='ts', freq='M'))
+        # Grupuj po godzinach
+        hourly_plays = self.history_data.groupby(self.history_data['ts'].dt.hour).size()
+        total_plays = hourly_plays.sum()
         
-        for month, group in monthly_discovery:
-            month_artists = set(group['master_metadata_album_artist_name'])
-            new_artists = month_artists - known_artists
-            known_artists.update(new_artists)
-            
-            patterns['listening_habits']['discovery_rate'].append({
-                'month': month.strftime('%Y-%m'),
-                'new_artists': len(new_artists),
-                'total_artists': len(month_artists),
-                'discovery_rate': len(new_artists) / len(month_artists) if month_artists else 0
-            })
+        if total_plays > 0:
+            daily_patterns['hourly_distribution'] = (hourly_plays / total_plays).to_dict()
+        else:
+            daily_patterns['hourly_distribution'] = {}
         
-        # Analiza powtórzeń
-        for artist, features in self.artist_features.items():
-            patterns['listening_habits']['repeat_patterns'][features['play_count']] += 1
+        # Grupuj po dniach tygodnia
+        weekday_plays = self.history_data.groupby(self.history_data['ts'].dt.dayofweek).size()
+        if total_plays > 0:
+            daily_patterns['weekday_distribution'] = (weekday_plays / total_plays).to_dict()
+        else:
+            daily_patterns['weekday_distribution'] = {}
         
-        # Analiza "streaks" słuchania
-        current_streak = []
-        prev_date = None
+        # Analiza "streaks" (ciągów dni ze słuchaniem)
+        daily_activity = self.history_data.groupby(self.history_data['ts'].dt.date).size()
+        active_days = daily_activity.index.tolist()
         
-        for date in sorted(self.history_data['ts'].dt.date.unique()):
-            if prev_date is None or (date - prev_date).days == 1:
-                current_streak.append(date)
+        if active_days:
+            # Oblicz current streak
+            today = pd.Timestamp.now().date()
+            current_streak = 0
+            for day in reversed(active_days):
+                if (today - day).days <= current_streak + 1:
+                    current_streak += 1
             else:
-                if len(current_streak) >= 3:
-                    patterns['listening_habits']['listening_streaks'].append({
-                        'start': current_streak[0].isoformat(),
-                        'end': current_streak[-1].isoformat(),
-                        'length': len(current_streak)
-                    })
-                current_streak = [date]
-            prev_date = date
+                    break
+            
+            # Oblicz longest streak
+            longest_streak = 1
+            current = 1
+            for i in range(1, len(active_days)):
+                if (active_days[i] - active_days[i-1]).days == 1:
+                    current += 1
+                    longest_streak = max(longest_streak, current)
+                else:
+                    current = 1
+            
+            streak_stats = {
+                'current_streak': current_streak,
+                'longest_streak': longest_streak,
+                'total_active_days': len(active_days)
+            }
+        else:
+            streak_stats = {
+                'current_streak': 0,
+                'longest_streak': 0,
+                'total_active_days': 0
+            }
         
-        return patterns
+        return {
+            'monthly_stats': monthly_data,
+            'daily_patterns': daily_patterns,
+            'streak_stats': streak_stats
+        }
 
     def analyze_discovery_paths(self) -> Dict:
         """Analizuje ścieżki odkrywania nowej muzyki"""
@@ -498,8 +630,8 @@ class SpotifyAnalyzer:
         
         return paths
 
-    def get_recommendations(self, top_n: int = 10) -> Dict[str, List[Dict]]:
-        """Generuje spersonalizowane rekomendacje bazując na podobieństwie gatunków"""
+    def generate_recommendations(self) -> Dict:
+        """Generuje rekomendacje artystów na podstawie historii słuchania"""
         print("\nGenerating recommendations...")
         
         recommendations = {
@@ -507,58 +639,72 @@ class SpotifyAnalyzer:
             'hidden_gems': []
         }
         
-        recent_artists = set(self.history_data.nlargest(100, 'ts')['master_metadata_album_artist_name'])
+        # Zbierz cechy ulubionych artystów
+        top_artists = sorted(
+            self.artist_features.items(),
+            key=lambda x: x[1]['play_count'],
+            reverse=True
+        )[:20]  # Weź top 20 artystów
         
-        # Znajdź aktywne gatunki
-        recent_genres = set()
-        for artist in recent_artists:
-            if artist in self.artist_features:
-                recent_genres.update(self.artist_features[artist]['genres'])
+        favorite_genres = defaultdict(int)
+        avg_popularity = []
         
-        # Znajdź podobnych artystów bazując na gatunkach
-        all_artists = set(self.artist_features.keys()) - recent_artists
-        potential_recommendations = []
+        for artist, data in top_artists:
+            for genre in data.get('genres', []):
+                favorite_genres[genre] += data['play_count']
+            if 'global_popularity' in data:
+                avg_popularity.append(data['global_popularity'])
         
-        for artist in tqdm(all_artists, desc="Finding similar artists"):
-            if not self.artist_features[artist]['genres']:
+        # Normalizuj wagi gatunków
+        total_plays = sum(favorite_genres.values())
+        genre_weights = {
+            genre: count / total_plays 
+            for genre, count in favorite_genres.items()
+        }
+        
+        # Średnia popularność ulubionych artystów
+        avg_popularity = np.mean(avg_popularity) if avg_popularity else 50
+        
+        # Znajdź podobnych artystów
+        for artist, data in self.artist_features.items():
+            # Pomijaj już słuchanych artystów
+            if artist in [a[0] for a in top_artists]:
                 continue
             
-            # Oblicz podobieństwo gatunków
-            artist_genres = self.artist_features[artist]['genres']
-            genre_match = len(artist_genres & recent_genres)
-            genre_diversity = len(artist_genres)
-            popularity = self.artist_features[artist]['global_popularity'] / 100
+            # Oblicz dopasowanie gatunkowe
+            genre_score = 0
+            artist_genres = data.get('genres', set())
+            for genre in artist_genres:
+                genre_score += genre_weights.get(genre, 0)
             
-            # Oblicz score bazując na różnych czynnikach
-            genre_score = (0.6 * genre_match / max(1, len(recent_genres)) + 
-                          0.4 * genre_diversity / max(1, len(artist_genres)))
+            # Normalizuj wynik
+            genre_score = genre_score / len(artist_genres) if artist_genres else 0
             
-            if genre_score > 0.3:  # tylko znaczące dopasowania gatunkowe
-                potential_recommendations.append({
+            # Oblicz całkowity wynik
+            popularity = data.get('global_popularity', 50)
+            total_score = 0.7 * genre_score + 0.3 * (1 - abs(popularity - avg_popularity) / 100)
+            
+            recommendation = {
                     'artist': artist,
                     'genres': list(artist_genres),
-                    'popularity': self.artist_features[artist]['global_popularity'],
+                'popularity': popularity,
                     'genre_score': genre_score,
-                    'popularity_score': popularity,
-                    'total_score': 0.7 * genre_score + 0.3 * popularity
-                })
+                'total_score': total_score
+            }
+            
+            # Klasyfikuj jako mainstream lub hidden gem
+            if popularity >= 70:
+                recommendations['mainstream'].append(recommendation)
+            else:
+                recommendations['hidden_gems'].append(recommendation)
         
-        # Sortuj według całkowitego score
-        sorted_recommendations = sorted(
-            potential_recommendations, 
+        # Sortuj rekomendacje według całkowitego wyniku
+        for category in recommendations:
+            recommendations[category] = sorted(
+                recommendations[category],
             key=lambda x: x['total_score'], 
             reverse=True
-        )
-        
-        # Podziel na mainstream i hidden gems
-        for rec in sorted_recommendations:
-            if len(recommendations['mainstream']) < top_n and rec['popularity'] >= 70:
-                recommendations['mainstream'].append(rec)
-            elif len(recommendations['hidden_gems']) < top_n and rec['popularity'] < 70 and rec['genre_score'] > 0.4:
-                recommendations['hidden_gems'].append(rec)
-            
-            if len(recommendations['mainstream']) >= top_n and len(recommendations['hidden_gems']) >= top_n:
-                break
+            )[:20]  # Ogranicz do top 20 w każdej kategorii
         
         return recommendations
 
@@ -706,125 +852,167 @@ class SpotifyAnalyzer:
         
         return relationships
 
+    def get_basic_stats(self) -> Dict:
+        """Zwraca podstawowe statystyki z danych"""
+        if self.history_data is None or self.history_data.empty:
+            return {
+                'total_tracks': 0,
+                'unique_artists': 0,
+                'total_time': 0,
+                'date_range': {
+                    'start': None,
+                    'end': None
+                }
+            }
+        
+        stats = {
+            'total_tracks': len(self.history_data),
+            'unique_artists': self.history_data['master_metadata_album_artist_name'].nunique(),
+            'total_time': self.history_data['ms_played'].sum() / (1000 * 60 * 60),  # w godzinach
+            'date_range': {
+                'start': self.history_data['ts'].min().strftime('%Y-%m-%d'),
+                'end': self.history_data['ts'].max().strftime('%Y-%m-%d')
+            }
+        }
+        
+        return stats
+
 if __name__ == "__main__":
     analyzer = SpotifyAnalyzer()
     
     print("\nRunning comprehensive music analysis...")
     analysis = analyzer.analyze_all()
     
+    if analysis['status'] == 'error':
+        print(f"\nError: {analysis['message']}")
+        exit(1)
+    
     print("\n=== Analysis Results ===")
     
-    # Statystyki czasowe
-    print("\nTemporal Patterns:")
-    if 'temporal' in analysis:
-        temp = analysis['temporal']
-        print("\nTop listening periods:")
-        for day, count in sorted(temp['weekday'].items(), key=lambda x: x[1], reverse=True):
-            print(f"- {day}: {count/sum(temp['weekday'].values()):.1%}")
-        
-        print("\nDaily distribution:")
-        for hour, count in sorted(temp['daily'].items(), key=lambda x: x[1], reverse=True)[:5]:
-            print(f"- {hour:02d}:00: {count/sum(temp['daily'].values()):.1%}")
-        
-        print("\nSeasonal trends:")
-        for season, count in sorted(temp['seasonal'].items(), key=lambda x: x[1], reverse=True):
-            print(f"- {season}: {count/sum(temp['seasonal'].values()):.1%}")
-        
-        if temp['session_length']:
-            print(f"\nListening sessions:")
-            print(f"- Average length: {np.mean(temp['session_length']):.1f} minutes")
-            print(f"- Longest session: {np.max(temp['session_length']):.1f} minutes")
-            print(f"- Total sessions: {len(temp['session_length'])}")
+    # Podstawowe statystyki
+    if 'basic_stats' in analysis['data']:
+        stats = analysis['data']['basic_stats']
+        print("\nBasic Statistics:")
+        print(f"Total tracks: {stats['total_tracks']:,}")
+        print(f"Unique artists: {stats['unique_artists']:,}")
+        print(f"Total listening time: {stats['total_time']:.1f} hours")
+        print(f"Date range: {stats['date_range']['start']} to {stats['date_range']['end']}")
     
-    # Gatunki i ich ewolucja
-    print("\nGenre Analysis:")
-    if 'genres' in analysis:
-        genres = analysis['genres']
+    # Statystyki artystów
+    if 'artist_analysis' in analysis['data']:
+        artist_data = analysis['data']['artist_analysis']
         
-        print("\nTop genres by expertise:")
-        for genre, score in sorted(genres['genre_expertise'].items(), 
-                                 key=lambda x: x[1], reverse=True)[:10]:
-            print(f"- {genre}: {score:.1%}")
+        print("\nTop Artists:")
+        for i, artist in enumerate(artist_data['top_artists'][:10], 1):
+            print(f"\n{i}. {artist['name']}")
+            print(f"   Plays: {artist['play_count']:,}")
+            print(f"   Listening time: {artist['total_time']:.1f} hours")
+            print(f"   Unique tracks: {artist['unique_tracks']}")
+            if artist['genres']:
+                print(f"   Genres: {', '.join(artist['genres'][:3])}")
         
-        print("\nPopular genre combinations:")
-        for (genre1, genre2), count in sorted(genres['genre_combinations'].items(), 
-                                            key=lambda x: x[1], reverse=True)[:5]:
-            print(f"- {genre1} + {genre2}: {count} times")
-        
-        print("\nGenre flow (most common transitions):")
-        genre_flows = []
-        for from_genre, transitions in genres['genre_flow'].items():
-            for to_genre, count in transitions.items():
-                genre_flows.append((from_genre, to_genre, count))
-        
-        for from_genre, to_genre, count in sorted(genre_flows, key=lambda x: x[2], reverse=True)[:5]:
-            print(f"- {from_genre} → {to_genre}: {count} times")
-    
-    # Wzorce odkrywania
-    print("\nDiscovery Patterns:")
-    if 'discovery' in analysis:
-        discovery = analysis['discovery']
-        
-        print("\nDiscovery sources:")
-        total_discoveries = sum(discovery['discovery_sources'].values())
-        for source, count in sorted(discovery['discovery_sources'].items(), key=lambda x: x[1], reverse=True):
-            print(f"- {source}: {count} ({count/total_discoveries:.1%})")
-        
-        print("\nMost interesting discovery paths:")
-        for path in sorted(discovery['artist_paths'], 
-                         key=lambda x: len(x['path']), reverse=True)[:3]:
-            print(f"\nPath of {len(path['path'])} artists in {path['duration_hours']:.1f} hours:")
-            print(" → ".join(path['path']))
-        
-        if discovery['exploration_patterns']:
-            recent_patterns = discovery['exploration_patterns'][-3:]
-            print("\nRecent genre exploration:")
-            for pattern in recent_patterns:
-                print(f"\n{pattern['month']}:")
-                print(f"- New genres discovered: {len(pattern['new_genres'])}")
-                if pattern['new_genres']:
-                    print(f"- Examples: {', '.join(pattern['new_genres'][:3])}")
-                print(f"- Exploration rate: {pattern['exploration_rate']:.1%}")
-    
-    # Wzorce słuchania
-    print("\nListening Patterns:")
-    if 'listening' in analysis:
-        listening = analysis['listening']
-        
-        if 'listening_habits' in listening and listening['listening_habits']['favorite_artists']:
-            recent_favorites = listening['listening_habits']['favorite_artists'][-1]
-            print(f"\nTop artists ({recent_favorites['month']}):")
-            for artist in recent_favorites['artists']:
+        if artist_data['listening_habits']['favorite_artists']:
+            recent = artist_data['listening_habits']['favorite_artists'][-1]
+            print(f"\nRecent Favorites ({recent['month']}):")
+            for artist in recent['artists']:
                 print(f"- {artist['name']}: {artist['plays']} plays")
         
-        if 'artist_clusters' in listening:
-            print("\nArtist clusters:")
-            for cluster_id, cluster in listening['artist_clusters'].items():
-                if isinstance(cluster, dict) and cluster.get('size', 0) >= 5:
-                    print(f"\nCluster {cluster_id} ({cluster['size']} artists):")
-                    print(f"- Average popularity: {cluster['avg_popularity']:.1f}")
-                    if 'top_genres' in cluster:
-                        print(f"- Top genres: {', '.join(genre for genre, _ in cluster['top_genres'][:3])}")
-                    print(f"- Example artists: {', '.join(cluster['artists'][:3])}")
+        if artist_data['listening_habits']['discovery_rate']:
+            recent_discovery = artist_data['listening_habits']['discovery_rate'][-1]
+            print(f"\nRecent Discovery Rate ({recent_discovery['month']}):")
+            print(f"New artists: {recent_discovery['new_artists']}")
+            print(f"Discovery rate: {recent_discovery['discovery_rate']:.1%}")
+    
+    # Wzorce słuchania
+    if 'listening_patterns' in analysis['data']:
+        patterns = analysis['data']['listening_patterns']
+        
+        print("\nListening Patterns:")
+        if 'monthly_stats' in patterns and patterns['monthly_stats']:
+            recent = patterns['monthly_stats'][-1]
+            print(f"\nRecent Month ({recent['month']}):")
+            print(f"Total plays: {recent['total_plays']:,}")
+            print(f"Unique artists: {recent['unique_artists']}")
+            print(f"Listening time: {recent['total_time']:.1f} hours")
+            print(f"Average track length: {recent['avg_track_length']:.0f} seconds")
+        
+        if 'streak_stats' in patterns:
+            streaks = patterns['streak_stats']
+            print(f"\nListening Streaks:")
+            print(f"Current streak: {streaks['current_streak']} days")
+            print(f"Longest streak: {streaks['longest_streak']} days")
+            print(f"Total active days: {streaks['total_active_days']} days")
+        
+        if 'daily_patterns' in patterns:
+            daily = patterns['daily_patterns']
+            if 'hourly_distribution' in daily:
+                print("\nPeak Listening Hours:")
+                top_hours = sorted(daily['hourly_distribution'].items(), 
+                                 key=lambda x: x[1], reverse=True)[:3]
+                for hour, share in top_hours:
+                    print(f"- {int(hour):02d}:00: {share:.1%}")
+            
+            if 'weekday_distribution' in daily:
+                print("\nWeekday Distribution:")
+                for day, share in sorted(daily['weekday_distribution'].items(), 
+                                       key=lambda x: x[1], reverse=True):
+                    print(f"- Day {day}: {share:.1%}")
+    
+    # Gatunki
+    if 'genre_analysis' in analysis['data']:
+        genres = analysis['data']['genre_analysis']
+        
+        if 'genre_expertise' in genres:
+            print("\nTop Genres:")
+            for genre, score in sorted(genres['genre_expertise'].items(), 
+                                     key=lambda x: x[1], reverse=True)[:5]:
+                print(f"- {genre}: {score:.1%}")
+        
+        if 'genre_combinations' in genres:
+            print("\nPopular Genre Combinations:")
+            top_combos = sorted(genres['genre_combinations'].items(), 
+                              key=lambda x: x[1], reverse=True)[:3]
+            for (genre1, genre2), count in top_combos:
+                print(f"- {genre1} + {genre2}: {count} times")
+    
+    # Odkrywanie muzyki
+    if 'discovery_paths' in analysis['data']:
+        discovery = analysis['data']['discovery_paths']
+        
+        if 'discovery_sources' in discovery:
+            print("\nDiscovery Sources:")
+            total = sum(discovery['discovery_sources'].values())
+            for source, count in sorted(discovery['discovery_sources'].items(), 
+                                      key=lambda x: x[1], reverse=True):
+                print(f"- {source}: {count} ({count/total:.1%})")
+        
+        if 'exploration_patterns' in discovery and discovery['exploration_patterns']:
+            recent = discovery['exploration_patterns'][-1]
+            print(f"\nRecent Genre Exploration ({recent['month']}):")
+            print(f"New genres: {len(recent['new_genres'])}")
+            print(f"Exploration rate: {recent['exploration_rate']:.1%}")
     
     # Rekomendacje
-    print("\nRecommended Artists:")
-    if 'recommendations' in analysis:
-        recs = analysis['recommendations']
+    if 'recommendations' in analysis['data']:
+        recs = analysis['data']['recommendations']
         
+    print("\nRecommended Artists:")
+        
+        if recs['mainstream']:
         print("\nPopular Recommendations:")
         for i, rec in enumerate(recs['mainstream'][:10], 1):
             print(f"\n{i}. {rec['artist']}")
-            if 'genres' in rec and rec['genres']:
+                if rec['genres']:
                 print(f"   Genres: {', '.join(rec['genres'][:3])}")
             print(f"   Popularity: {rec['popularity']}/100")
             print(f"   Genre match: {rec['genre_score']:.2f}")
             print(f"   Overall score: {rec['total_score']:.2f}")
         
+        if recs['hidden_gems']:
         print("\nHidden Gems (Less Popular but Matching Your Taste):")
         for i, rec in enumerate(recs['hidden_gems'][:10], 1):
             print(f"\n{i}. {rec['artist']}")
-            if 'genres' in rec and rec['genres']:
+                if rec['genres']:
                 print(f"   Genres: {', '.join(rec['genres'][:3])}")
             print(f"   Popularity: {rec['popularity']}/100")
             print(f"   Genre match: {rec['genre_score']:.2f}")
