@@ -12,6 +12,8 @@ from tqdm import tqdm
 import pylast
 from dotenv import load_dotenv
 from typing import Dict, List
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
 
 class MusicRecommender:
     def __init__(self):
@@ -21,30 +23,34 @@ class MusicRecommender:
             'total_ms': 0,
             'unique_tracks': set(),
             'listening_hours': defaultdict(float),
-            'tags': set(),
-            'similar_artists': set(),
-            'global_listeners': 0
+            'genres': set(),
+            'global_popularity': 0
         })
-        self.network = None
-        self.favorite_tags = None
+        self.spotify = None
+        self.favorite_genres = None
         self.preferred_hours = None
         self.artist_clusters = None
         self.scaler = StandardScaler()
         
-    def setup_lastfm_client(self):
+    def setup_spotify_client(self):
+        """Inicjalizacja klienta Spotify API"""
         load_dotenv()
-        api_key = os.getenv('LASTFM_API_KEY')
-        api_secret = os.getenv('LASTFM_API_SECRET')
-        
-        if not api_key or not api_secret:
-            raise ValueError("Missing Last.fm API keys. Set LASTFM_API_KEY and LASTFM_API_SECRET in .env file")
-        
-        self.network = pylast.LastFMNetwork(
-            api_key=api_key,
-            api_secret=api_secret
-        )
-        
-        print("Successfully connected to Last.fm API!")
+        try:
+            client_id = os.getenv('SPOTIFY_CLIENT_ID')
+            client_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
+            
+            if not client_id or not client_secret:
+                raise ValueError("Missing Spotify credentials. Check your .env file")
+            
+            client_credentials_manager = SpotifyClientCredentials(
+                client_id=client_id,
+                client_secret=client_secret
+            )
+            self.spotify = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+            print("Successfully connected to Spotify API!")
+        except Exception as e:
+            print(f"Error setting up Spotify client: {e}")
+            self.spotify = None
     
     def load_streaming_history(self, data_dir='data'):
         all_data = []
@@ -113,13 +119,13 @@ class MusicRecommender:
     
     def process_listening_history(self):
         """Przetwarza historię słuchania i zbiera informacje o artystach"""
-        if self.history_data is None or self.network is None:
-            raise ValueError("Load history data and setup Last.fm client first")
+        if self.history_data is None or self.spotify is None:
+            raise ValueError("Load history data and setup Spotify client first")
 
         print("\nProcessing listening history...")
         
-        # Wczytaj cache gatunków jeśli istnieje
-        cache_file = Path('data/artist_cache.json')
+        # Wczytaj cache jeśli istnieje
+        cache_file = Path('data/spotify_artist_cache.json')
         cache_file.parent.mkdir(exist_ok=True)
         
         artist_cache = {}
@@ -152,28 +158,19 @@ class MusicRecommender:
             
             for artist_name in tqdm(uncached_artists, desc="Fetching artist data"):
                 try:
-                    artist = self.network.get_artist(artist_name)
-                    
-                    # Pobierz tagi
-                    tags = self._retry_api_call(artist.get_top_tags)
-                    if tags:
-                        artist_tags = [tag.item.name.lower() for tag in tags[:10]]
-                    else:
-                        artist_tags = []
-                    
-                    # Pobierz liczbę słuchaczy
-                    listeners = self._retry_api_call(artist.get_listener_count)
-                    
-                    # Zapisz do cache'u
-                    artist_cache[artist_name] = {
-                        'tags': artist_tags,
-                        'listeners': listeners if listeners else 0
-                    }
-                    
-                    # Aktualizuj features
-                    self.artist_features[artist_name]['tags'].update(artist_tags)
-                    self.artist_features[artist_name]['global_listeners'] = listeners if listeners else 0
-                    
+                    results = self.spotify.search(q=artist_name, type='artist', limit=1)
+                    if results['artists']['items']:
+                        artist = results['artists']['items'][0]
+                        artist_cache[artist_name] = {
+                            'genres': artist['genres'],
+                            'popularity': artist['popularity'],
+                            'spotify_id': artist['id']
+                        }
+                        
+                        # Aktualizuj features
+                        self.artist_features[artist_name]['genres'].update(artist['genres'])
+                        self.artist_features[artist_name]['global_popularity'] = artist['popularity']
+                        
                 except Exception as e:
                     print(f"Error processing {artist_name}: {e}")
                     continue
@@ -190,21 +187,21 @@ class MusicRecommender:
             print("\nUsing cached artist data...")
             for artist_name, cache_data in artist_cache.items():
                 if artist_name in self.artist_features:
-                    self.artist_features[artist_name]['tags'].update(cache_data['tags'])
-                    self.artist_features[artist_name]['global_listeners'] = cache_data['listeners']
+                    self.artist_features[artist_name]['genres'].update(cache_data['genres'])
+                    self.artist_features[artist_name]['global_popularity'] = cache_data['popularity']
 
-        # Zbierz wszystkie unikalne tagi
-        all_tags = set()
+        # Zbierz wszystkie unikalne gatunki
+        all_genres = set()
         for features in self.artist_features.values():
-            all_tags.update(features['tags'])
+            all_genres.update(features['genres'])
         
-        # Znajdź najczęstsze tagi
-        tag_counts = defaultdict(int)
+        # Znajdź najczęstsze gatunki
+        genre_counts = defaultdict(int)
         for features in self.artist_features.values():
-            for tag in features['tags']:
-                tag_counts[tag] += features['play_count']
+            for genre in features['genres']:
+                genre_counts[genre] += features['play_count']
         
-        self.favorite_tags = sorted(tag_counts.items(), key=lambda x: x[1], reverse=True)
+        self.favorite_genres = sorted(genre_counts.items(), key=lambda x: x[1], reverse=True)
 
         # Oblicz preferowane godziny słuchania
         hour_counts = defaultdict(float)
@@ -623,8 +620,8 @@ class MusicRecommender:
 if __name__ == "__main__":
     recommender = MusicRecommender()
     
-    print("Configuring Last.fm API access...")
-    recommender.setup_lastfm_client()
+    print("Configuring Spotify API access...")
+    recommender.setup_spotify_client()
     
     print("Loading listening history...")
     recommender.load_streaming_history()
@@ -638,7 +635,20 @@ if __name__ == "__main__":
     print("\nRecommended new artists:")
     for i, rec in enumerate(recommendations, 1):
         print(f"\n{i}. {rec['artist']}")
-        print(f"   - Tags: {', '.join(rec['tags'][:3])}")
-        print(f"   - Listeners: {rec['listeners']:,}")
-        print(f"   - Tag similarity: {rec['tag_similarity']:.2f}")
-        print(f"   - Overall match score: {rec['score']:.2f}") 
+        if 'genres' in rec:
+            print(f"   - Genres: {', '.join(rec['genres'][:3])}")
+        print(f"   - Popularity: {rec['popularity']}/100")
+        if 'source' in rec:
+            print(f"   - Similar to: {rec['source']}")
+        print(f"   - Match score: {rec['score']:.2f}")
+
+    # Wyświetl dodatkowe statystyki
+    print("\nListening patterns:")
+    if recommender.favorite_genres:
+        print("\nTop genres:")
+        for genre, count in recommender.favorite_genres[:5]:
+            print(f"- {genre}: {count} plays")
+    
+    print("\nPeak listening hours:")
+    for hour, duration in sorted(recommender.preferred_hours[:3]):
+        print(f"- {hour:02d}:00: {duration:.1f} hours") 
