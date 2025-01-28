@@ -18,7 +18,7 @@ class SpotifyAnalyzer:
     def __init__(self, data_dir: str = 'data'):
         self.data_dir = Path(data_dir)
         self.cache_dir = self.data_dir / 'cache'
-        self.plots_dir = self.data_dir / 'plots'
+        self.plots_dir = 'plots'
         
         self.cache_dir.mkdir(exist_ok=True)
         self.plots_dir.mkdir(exist_ok=True)
