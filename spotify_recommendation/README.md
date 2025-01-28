@@ -1,79 +1,82 @@
-# Music Recommendation System
+# Spotify Music Analysis & Recommendation
 
-A sophisticated music recommendation system that analyzes your Spotify listening history and uses Last.fm data to generate personalized artist recommendations.
+A tool for analyzing Spotify listening history and generating personalized music recommendations.
 
 ## Features
 
-- Analyzes Spotify listening history from JSON files
-- Integrates with Last.fm API for artist metadata
-- Uses machine learning (K-means clustering) for artist categorization
-- Provides personalized recommendations based on:
-  - Listening patterns
-  - Genre preferences
-  - Artist similarity
-  - Global popularity
+### Listening Analysis
+- Time pattern analysis (daily/weekly listening distribution)
+- Listening session lengths
+- Genre trends
+- New genre discovery tracking
+- Artist clustering based on listener behavior
+
+### Recommendations
+- Popular artist recommendations
+- Hidden gems discovery (less known artists)
+- Genre similarity-based recommendations
+
+### Visualizations
+The program generates the following visualizations in the `plots/` folder:
+- `daily_distribution.png` - Daily listening distribution
+- `weekly_distribution.png` - Weekly listening distribution
+- `session_lengths.png` - Listening session length distribution
+- `top_genres.png` - Top 10 most listened genres
+- `genre_flows.png` - Most common genre transitions
+- `genre_exploration.png` - Genre discovery trends
+- `clusters.png` - Artist clusters visualization (PCA)
 
 ## Requirements
-
 - Python 3.8+
-- Last.fm API credentials
+- Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, spotipy
+- Spotify account and listening history
 
-## Installation
-
+## Installation and Setup
 1. Clone the repository
-2. Install dependencies:
+2. Install required libraries:
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy matplotlib seaborn scikit-learn spotipy python-dotenv
 ```
-3. Create a `.env` file with your Last.fm API credentials:
+3. Create a `.env` file in the root directory with your Spotify API credentials:
 ```
-LASTFM_API_KEY=your_api_key
-LASTFM_API_SECRET=your_api_secret
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
 ```
 
 ## Usage
-
-1. Place your Spotify listening history JSON files in the `data/` directory. Files have to be JSON files downloaded from Spotify, their names should look like `Streaming_History_Audio_{time period}.json`
-2. Run the recommender:
 ```bash
-python spotify_recommender.py
+python spotify_analyzer.py
 ```
 
-## How it works
+## Project Structure
+```
+spotify_recommendation/
+├── data/                     # Input data and cache
+│   ├── cache/               # Artist data cache
+│   └── plots/               # Generated visualizations
+├── spotify_analyzer.py       # Main script
+├── clustering.py            # Clustering analysis
+├── listening_stats.py       # Listening statistics analysis
+├── visualization.py         # Visualization generation
+├── spotify_client.py        # Spotify API client
+└── README.md
+```
 
-1. **Data Loading**
-   - Loads and combines Spotify listening history from JSON files
-   - Filters out non-music content (podcasts, etc.)
+## Technical Details
+- Behavioral clustering uses the following features:
+  - Play count
+  - Total listening time
+  - Unique tracks count
+  - Global popularity
+  - Genre diversity
+  - Average gap between listens
+  - Track diversity
+  - Average track duration
 
-2. **Data Processing**
-   - Analyzes listening patterns (play counts, time spent, etc.)
-   - Retrieves artist metadata from Last.fm (tags, similar artists)
-   - Normalizes and processes features for clustering
+- Visualizations use matplotlib and seaborn libraries
+- Data is automatically cached for faster subsequent analyses
 
-3. **Artist Clustering**
-   - Uses K-means clustering to group artists based on:
-     - Musical characteristics (tags)
-     - Listening statistics
-     - Popularity metrics
-
-4. **Recommendation Generation**
-   - Identifies potential new artists through Last.fm similarities
-   - Scores candidates based on:
-     - Tag similarity with favorite genres
-     - Artist popularity
-     - Cluster alignment
-
-## Output
-
-The system provides:
-- Analysis of your listening preferences
-- Preferred listening hours
-- Favorite music genres
-- Detailed artist recommendations with:
-  - Genre tags
-  - Popularity metrics
-  - Similarity scores
-
-## Note
-
-This system requires Spotify's "Extended Streaming History" which can be requested through your Spotify account settings. 
+## Notes
+- System requires Spotify listening history in JSON format
+- History files should be placed in the `data/` directory
+- Cache is stored in `data/cache/` 
