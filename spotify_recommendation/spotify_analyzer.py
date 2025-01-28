@@ -35,6 +35,96 @@ class SpotifyAnalyzer:
         """Loads streaming history from Spotify files"""
         self.history_data = self.stats_analyzer.load_history()
 
+    def analyze_artists(self) -> Dict:
+        """Analizuje statystyki artystów"""
+        print("\nAnalyzing artist statistics...")
+        
+        analysis = {
+            'top_artists': [],
+            'artist_clusters': self._cluster_artists(),
+            'listening_moods': self._analyze_listening_moods(),
+            'artist_relationships': self._analyze_artist_relationships(),
+            'listening_habits': {
+                'favorite_artists': [],
+                'discovery_rate': [],
+                'repeat_patterns': defaultdict(int),
+                'listening_streaks': []
+            }
+        }
+        
+        # Analiza top artystów
+        top_artists = sorted(
+            self.artist_features.items(),
+            key=lambda x: x[1]['play_count'],
+            reverse=True
+        )[:50]
+        
+        for artist, data in top_artists:
+            analysis['top_artists'].append({
+                'name': artist,
+                'play_count': data['play_count'],
+                'total_time': data['total_ms'] / (1000 * 60 * 60),  # w godzinach
+                'unique_tracks': len(data['unique_tracks']),
+                'genres': list(data['genres']),
+                'popularity': data['global_popularity']
+            })
+        
+        # Analiza ulubionych artystów w czasie
+        monthly_top = self.history_data.groupby([
+            pd.Grouper(key='ts', freq='M'),
+            'master_metadata_album_artist_name'
+        ]).size().reset_index(name='plays')
+        
+        for month, month_data in monthly_top.groupby(pd.Grouper(key='ts', freq='M')):
+            if not month_data.empty:
+                top_month_artists = month_data.nlargest(5, 'plays')
+                analysis['listening_habits']['favorite_artists'].append({
+                    'month': month.strftime('%Y-%m'),
+                    'artists': [{
+                        'name': row['master_metadata_album_artist_name'],
+                        'plays': row['plays']
+                    } for _, row in top_month_artists.iterrows()]
+                })
+        
+        # Analiza odkrywania nowych artystów
+        known_artists = set()
+        monthly_discovery = self.history_data.groupby(pd.Grouper(key='ts', freq='M'))
+        
+        for month, group in monthly_discovery:
+            month_artists = set(group['master_metadata_album_artist_name'])
+            new_artists = month_artists - known_artists
+            known_artists.update(new_artists)
+            
+            analysis['listening_habits']['discovery_rate'].append({
+                'month': month.strftime('%Y-%m'),
+                'new_artists': len(new_artists),
+                'total_artists': len(month_artists),
+                'discovery_rate': len(new_artists) / len(month_artists) if month_artists else 0
+            })
+        
+        # Analiza powtórzeń
+        for artist, features in self.artist_features.items():
+            analysis['listening_habits']['repeat_patterns'][features['play_count']] += 1
+        
+        # Analiza "streaks" słuchania
+        current_streak = []
+        prev_date = None
+        
+        for date in sorted(self.history_data['ts'].dt.date.unique()):
+            if prev_date is None or (date - prev_date).days == 1:
+                current_streak.append(date)
+            else:
+                if len(current_streak) >= 3:
+                    analysis['listening_habits']['listening_streaks'].append({
+                        'start': current_streak[0].isoformat(),
+                        'end': current_streak[-1].isoformat(),
+                        'length': len(current_streak)
+                    })
+                current_streak = [date]
+            prev_date = date
+        
+        return analysis
+
     def analyze_all(self) -> Dict:
         """Performs comprehensive music analysis"""
         print("\nRunning comprehensive music analysis...")
