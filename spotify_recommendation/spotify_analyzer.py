@@ -36,7 +36,7 @@ class SpotifyAnalyzer:
         self.history_data = self.stats_analyzer.load_history()
 
     def analyze_artists(self) -> Dict:
-        """Analizuje statystyki artystów"""
+        """Analize artist statistics"""
         print("\nAnalyzing artist statistics...")
         
         analysis = {
@@ -52,7 +52,7 @@ class SpotifyAnalyzer:
             }
         }
         
-        # Analiza top artystów
+        # Top artists analysis
         top_artists = sorted(
             self.artist_features.items(),
             key=lambda x: x[1]['play_count'],
@@ -69,7 +69,7 @@ class SpotifyAnalyzer:
                 'popularity': data['global_popularity']
             })
         
-        # Analiza ulubionych artystów w czasie
+        # Favorite artists analysis over time
         monthly_top = self.history_data.groupby([
             pd.Grouper(key='ts', freq='M'),
             'master_metadata_album_artist_name'
@@ -86,7 +86,7 @@ class SpotifyAnalyzer:
                     } for _, row in top_month_artists.iterrows()]
                 })
         
-        # Analiza odkrywania nowych artystów
+        # New artists discovery analysis
         known_artists = set()
         monthly_discovery = self.history_data.groupby(pd.Grouper(key='ts', freq='M'))
         
@@ -102,11 +102,11 @@ class SpotifyAnalyzer:
                 'discovery_rate': len(new_artists) / len(month_artists) if month_artists else 0
             })
         
-        # Analiza powtórzeń
+        # Repeat patterns analysis
         for artist, features in self.artist_features.items():
             analysis['listening_habits']['repeat_patterns'][features['play_count']] += 1
         
-        # Analiza "streaks" słuchania
+        # Listening streaks analysis
         current_streak = []
         prev_date = None
         

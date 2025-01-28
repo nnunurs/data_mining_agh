@@ -24,4 +24,4 @@ class SpotifyClient:
             return spotify
         except Exception as e:
             print(f"Error setting up Spotify client: {e}")
-            return None 
+            return None
